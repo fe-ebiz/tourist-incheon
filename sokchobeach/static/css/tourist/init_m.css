@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+
+/*서브비쥬얼*/
+.contents .subVisual {background: #eee url(http://img.sokchobeach.co.kr/m/tourist/subVisual.jpg) no-repeat center / cover;}
+
+/*공통스타일*/
+.contents .wrap.cmStyle {padding: 17px 0 20px;}
+.contents .wrap.cmStyle .tit {text-align: center;}
+.contents .wrap.cmStyle .tit .sokcho {text-transform: uppercase; font-size: 12px; display: inline-block; text-indent: 2px; margin-bottom: 2px; background: #fff; border: 1px solid #61a0c8; padding: 5px 4px 3px; line-height: 1;}
+.contents .wrap.cmStyle .tit .sokcho-2 {font-size: 12px; text-transform: uppercase;}
+.contents .wrap.cmStyle .tit .big {display: block; letter-spacing: -1px; margin-top: 5px; font-size: 18px;}
+
+/*관광지*/
+.contents .wrap.cmStyle .tit + .area .h3-tit {margin-top: 10px;}
+.contents .tourist {}
+.contents .tourist .area {}
+.contents .tourist .area .h3-tit {position: relative; font-size: 15px; margin-top: 15px;}
+.contents .tourist .area .h3-tit:before {content: ""; display: inline-block; width: 5px; height: 14px; background: #c0c0c0; vertical-align: middle; margin-right: 4px;}
+.contents .tourist .area .list + .list {margin-top: 5px;}
+.contents .tourist .area .list > li {float: left; width: 48.6%; margin-left: 2.4%; margin-top: 15px; overflow: hidden;}
+.contents .tourist .area .list > li figure {border: 1px solid #a9a7a8; box-sizing: border-box;}
+.contents .tourist .area .list > li figure img {width: 100%;}
+.contents .tourist .area .list > li:first-child, .contents .tourist .area .list > li:nth-child(2) {margin-top: 5px;}
+.contents .tourist .area .list > li:nth-child(2n-1) {margin-left: 0;}
+.contents .tourist .area .list > .link-tour {cursor:pointer}
+/*.contents .tourist .area .list > li .tour-img {border: 1px solid #a19e9f; width: 280px; height: 160px; box-sizing: border-box;}*/
+.contents .tourist .area .list > li dl {margin-top: 7px; letter-spacing: -0.9px;}
+.contents .tourist .area .list > li dl dt {font-size: 12px; color: 0; padding-bottom: 5px; margin-bottom: 7px; border-bottom: 1px solid #c8c8c8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.contents .tourist .area .list > li dl dt h4 {font-size: 14px; color: #008ead; font-weight: 700;}
+.contents .tourist .area .list > li dl dd {font-size: 12px; color: #4c4c4c; line-height: 1.4; word-break: keep-all;}

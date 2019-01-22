@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-style: normal;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    /* line-height: 1; */
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+fieldset, img {border:0}
+
+img, input, button, select, textarea {margin:0; padding:0; vertical-align:middle}
+
+caption, th {text-align:left }
+
+q:before, q:after {content :''}
+
+button::-moz-focus-inner, input::-moz-focus-inner{padding:0; border:0;}
+
+caption, legend{width:0; height:0; font-size:0; line-height:0; text-indent:-9999px; visibility:hidden;}
+
+label {cursor: pointer;}
+
+a {text-decoration: none; color: inherit;}
+
+/* hidden_class */
+.hidden, .skip {width:0; height:0; margin:0; padding:0; overflow:hidden; line-height:0; font-size:0; visibility:hidden; position:absolute; left:0; top:0}
+
+.clr:before, .clr:after, .cf:before, .cf:after {content: ""; display: table;}
+.clr:after, .cf:after {clear: both;}
+
+/* button */
+button[type=button] {cursor: pointer;}
+
+/* backDrop */
+#backDrop, .backDrop {position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: block;}
+#backDrop {display: none;}
+/* font-bold */
+.f-bd {font-weight: 700;}
+/* dropDown-bg */
+.dropDown-bg {position: fixed; z-index: 11; top: 0; left: 0; width: 100%; height: 100%; background: url(http://img.go.co.kr/black_rgba90.png) repeat;}
+
+.appe-reset {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.appe-s-reset {
+	border: 1px solid #ddd; border-radius: 0; background: #fff;
+}
+
+/* a태그 아이콘 X버튼*/
+.a-i-x {position: absolute; display: block; width: 20px; height: 20px; top: 10px; right: 10px; cursor: pointer;}
+.a-i-x:before, .a-i-x:after {content: ""; display: inline-block; position: absolute; left: 0; top: 10px; width: 20px; height: 1px; background: #555;}
+.a-i-x:before {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.a-i-x:after {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* rArrow, lArrow 버튼 */
+.ic-lArrow:after, .ic-rArrow:after, .ic-bArrow:after {
+	position: relative; top: -2px;
+    content: ""; display: inline-block; width: 7px; height: 7px; border: 1px solid #898989;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.ic-lArrow:after {
+    border-right: 0; border-bottom: 0;
+    left: 2px;
+}
+.ic-rArrow:after {
+    border-top: 0; border-left: 0;
+    right: 2px;
+}
+.ic-bArrow:after {
+    border-top: 0; border-right: 0;
+    top: 2px; width: 8px; height: 8px;
+}
+.ie8 .ic-lArrow:after, .ie8 .ic-rArrow:after {
+	width: auto; height: auto;
+	border: 0; left: 0; right: 0;
+}
+.ie8 .ic-lArrow:after {content: "◀";}
+.ie8 .ic-rArrow:after {content: "▶";}
+.ie8 .ic-bArrow:after {content: "▼";}
+
+.i-borL-tran, .i-borT-tran {position: relative;}
+.i-borL-tran:before, .i-borL-tran:after, .i-borT-tran:before, .i-borT-tran:after{
+	position: absolute; content: ""; border: 4px solid transparent;
+}
+
+.i-borT-tran:before .i-borT-tran:after {
+	border-bottom: 8px solid #233549;  top: -13px; left: 18px;
+}
+.i-borT-tran:after {
+	top: -12px;
+}
+
+.i-borL-tran:before, .i-borL-tran:after {
+	border-right-color: #d2d2d2; bottom: 6px; left: -9px;
+}
+.i-borL-tran:after {
+	border-right-color: #fff; left: -8px;
+}
+.ie8 .i-borL-tran, .ie8 .i-borT-tran {display: none;}

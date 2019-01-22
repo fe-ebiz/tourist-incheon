@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+
+/*공통스타일*/
+.contents .wrap.cmStyle {padding-bottom: 10px;}
+
+/*서브비쥬얼*/
+.contents .subVisual {background: #eee url(http://img.sampobeach.co.kr/m/about/subVisual.jpg) no-repeat center 60% /cover;}
+
+/*소개*/
+.contents .about {}
+.contents .about .area {padding: 20px 0;}
+.contents .about .area + .area {padding-top: 10px;}
+.contents .about .area .h3-tit {position: relative; font-size: 12px; margin: 0px 0 0px; padding-left: 10px; letter-spacing: -0.9px;}
+.contents .about .area .h3-tit [class*=row-] {display: block;}
+.contents .about .area .h3-tit .row-1 {line-height: 1;}
+.contents .about .area .h3-tit .row-2 {font-size: 18px; margin-top: 2px;}
+.contents .about .area .h3-tit .sampo {text-transform: uppercase; font-size: 11px; display: inline-block; text-indent: 2px; margin-left: 3px;}
+.contents .about .area .h3-tit:before {content: ""; position: absolute; left: 0; top: -1px; display: inline-block; width: 4px; height: 35px; background: #c0c0c0; vertical-align: middle; margin-right: 10px;}
+.contents .about .area figure {margin-top: 10px;}
+.contents .about .area figure.full {}
+.contents .about .area figure.half {}
+.contents .about .area figure.half img:first-child {margin-right: 2%;}
+.contents .about .area figure.half img {width: 49%;}
+.contents .about .area figure img {box-sizing: border-box; border: 1px solid #bdbbbb;}
+.contents .about .area .showing {margin-top: 10px; font-size: 13px; line-height:1.5; letter-spacing: -0.7px; font-family: "NanumSquare", sans-serif;}

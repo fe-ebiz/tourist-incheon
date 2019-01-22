@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+/*-bxSlider 재정의-*/
+.bx-wrapper,
+.bx-wrapper .bx-viewport {position: relative; margin: 0 auto; border: none; box-shadow: none; background: none;}
+.bx-controls {display: none;}
+
+/* 1810110 상단띠배너_다솜 */
+.topbn-wrap {z-index: 99999; position: absolute; width: 100%; /*height: 77px;*/ margin: 0 auto; top: 0; text-align: center;}
+.topbn-wrap + .header {/*margin-top: 77px;*/ padding-top: 77px;}
+.topbn-wrap .slide-banner {position: relative; width: 100%; height: 100%; margin: 0 auto;}
+.topbn-wrap .slide-banner li {position: relative;}
+.topbn-wrap .slide-banner .bn-list-1 {}
+.topbn-wrap .slide-banner .bn-list-2 {}
+.topbn-wrap .slide-banner li .bn-link {display: block; width: 100%; min-width: 1180px; height: 77px;}
+.topbn-wrap .slide-banner .bn-goco .bn-link {background: url(http://img.sampobeach.co.kr/tbn_goco.jpg) repeat-x center center;}
+.topbn-wrap .slide-banner .bn-ocean .bn-link {background: url(http://img.sampobeach.co.kr/tbn_ocean.jpg) repeat-x center center;}
+
+
+
+
+
+
+
+
+
+
+
+
+

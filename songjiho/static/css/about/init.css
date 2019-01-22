@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+.about {background:url(../../../img/about/bg_about.jpg) no-repeat center center; background-size:cover}
+.about .con-sec {padding-bottom:109px;}
+.about .con-sec .con-area {}
+.about .con-sec .sub-tit {padding:50px 0 24px; font-size:35px; font-weight:500; line-height:45px; color:#343434}
+.about .con-sec .con-txt {padding:26px 0 0 3px; font-size:23px; line-height:28px}
+
+.about .con-sec .fimg {display:inline-block}
+.about .con-sec .fimg.full {margin-top:55px;}
+.about .con-sec .img01 {float:right; margin-top:-318px;}
+.about .con-sec .img02 {margin-top:72px;}
+.about .con-sec .img03 {position:absolute; right:0; bottom:0}
+
+
+
+
+
+
+
+
+
