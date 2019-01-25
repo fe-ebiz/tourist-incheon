@@ -2,144 +2,171 @@
 <!--[if IE 8]><html lang="ko-KR" class="no-js ie8 lt-ie10"><![endif]-->
 <!--[if IE 9]><html lang="ko-KR" class="no-js ie9 lt-ie10"><![endif]-->
 <!--[if !IE]><!-->
-<html lang="ko">
+<html lang="ko-KR">
 <!--<![endif]-->
+
 <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
 	<title>송지호해수욕장</title>
 	
 	<!--공통 폰트 및 css-->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
 	<link rel="stylesheet" href="http://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
-	<link rel="stylesheet" href="https://nurifunding.co.kr/static/fonts/NanumBarunGothic/nanumbarungothic.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.css">
-    <!--<link rel="stylesheet" href="http://static.songjihobeach.co.kr/css/common.css">-->
-	<link rel="stylesheet" href="../../static/css/reset.css">
-	<link rel="stylesheet" href="../../static/css/common.css">
-	
-	<!--css-->
-	<!--<link rel="stylesheet" href="http://static.songjihobeach.co.kr/css/board/init.css">-->
-	<link rel="stylesheet" href="../../static/css/board/init.css">
+	<link rel="stylesheet" href="http://static.sampobeach.co.kr/css/reset.css">
+
+	<!-- css -->
+	<link rel="stylesheet" href="http://static.songjihobeach.co.kr/css/init_v1.1.css">
+	<!--<link rel="stylesheet" href="../../static/css/init_v1.1.css">-->
+	<link rel="stylesheet" href="http://static.sampobeach.co.kr/css/totalweb.css">
 	
 	<!--js-->
 	<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-	<!--<script src="http://static.songjihobeach.co.kr/js/common.js"></script>-->
-	<script src="../../static/js/common.js"></script>
-	<script src="../../static/js/board/init.js"></script>
+	<script src="http://static.songjihobeach.co.kr/js/init_v1.1.js"></script>
+	<!--<script src="../../static/js/init_v1.1.js"></script>-->
 	
 	<!--[if lt IE 9]>
 		<script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
 	<![endif]-->
 </head>
-<body>
 
-    <div class="wrapper">
+<body class="Board">
 
-        <!-- header -->
-        <header id="header" class="header">
-            <div class="header-area">
-                <h1 class="logo"><a href="../index.html"><img src="../../img/common/logo.png" alt="송지호해수욕장"></a></h1>
-                
-				<nav class="gnb">
-                    <ul class="menu">
-                        <li class="nth-1"><a href="../about/index.html">해수욕장 소개</a></li>
-                        <li class="nth-2"><a href="../tourist/index.html">주변관광지</a></li>
-                        <li class="nth-3"><a href="../goseong/index.html">고성8경</a></li>
-                        <li class="nth-4"><a href="../event/index.html">이벤트</a></li>
-                        <li class="nth-5"><a href="../waycome/index.html">오시는길</a></li>
-                        <li class="nth-6 on"><a href="../board/index.html">공지사항</a></li>
-                        <li class="nth-7"><a href="../board/memory_list.html">추억게시판</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        
-        <!-- content -->
-        <div class="contents board">
-            <div class="wrap clr">
-                <!-- content visual -->
-                <div class="top-area">
-                    <div class="top-box">
-                        <h2 class="tit">공지사항</h2>
-                        <p class="sub-logo-txt">SONGJIHO BEACH</p>
-                    </div>
+	<h1 class="hidden">송지호해수욕장</h1>
+	
+	<div class="wrapper">
+	    <!-- 상단 띠배너 -->
+	    <div class="topbn-wrap clr">
+	        <ul class="slide-banner clr">
+	            <li class="bn-list-1 bn-goco">
+	                <a href="#none" target="_blank" class="bn-link" title="고코투어 할인구매하기"></a>
+	            </li>
+	            <li class="bn-list-2 bn-ocean">
+	                <a href="#none" target="_blank" class="bn-link" title="오션투유리조트 자세히보기"></a>
+	            </li>
+	        </ul>
+           
+            <script type="text/javascript">
+                $(".topbn-wrap .slide-banner").bxSlider({
+                    mode: 'fade',
+                    auto: true,
+                    controls : false,
+                    pager : false,
+                    autoControls: true,
+                    autoHover: true,
+                    speed: 500
+                });
+            </script>
+	    </div>
+	
+		<!-- header -->
+		<header class="header">
+             <div class="header-area">
+                 <div class="header-box clr">
+                     <h1 class="logo"><a href="../index.html"><img src="http://img.songjihobeach.co.kr/common/logo.png" alt="송지호해수욕장 로고"></a></h1>
+                     <nav class="gnb">
+                         <ul class="menu clr">
+                             <li class="itme-1"><a href="../index.html">해수욕장 소개</a></li>
+                             <li class="itme-2"><a href="../index.html">주변관광지</a></li>
+                             <li class="itme-3"><a href="../index.html">고성8경</a></li>
+                             <li class="itme-4"><a href="../index.html">오시는 길</a></li>
+                             <li class="itme-5 on page-move"><a href="../board/index.html">추억게시판</a></li>
+                         </ul>
+                     </nav>
+                 </div>
+             </div>
+		</header>
+	
+		<!-- contents -->
+		<div class="contents">
+            <section class="subVisual">
+                <div class="mainTxt">
+                    <h2>추억게시판</h2>
+                    <p class="p-2">SONGJIHO BEACH</p>
                 </div>
+            </section>
+            
+            <div class="con-sec">
+                <h3 class="con-tit"><span class="row-1">추억게시판</span><span class="sokcho">SONGJIHO BEACH</span></h3>
                 
-                <!-- location -->
-                <div class="location-box">
-                    <ul class="menu clr">
-                        <li><a href="#none">Home</a></li>
-                        <li><a href="#none">공지사항</a></li>
-                    </ul>
-                </div>
-
-                <!-- content main -->
-                <div class="con-sec">
-                    <div class="con-area">
-                        <h3 class="tit"><span class="tit-txt">공지사항</span><span class="tit-sub-txt">SONGJIHO BEACH</span></h3>
-                        
-                        <div class="board-area read">
-                            <div class="board-list">
-                                <table class="tbStyle">
-                                    <colgroup>
-                                        <col class="nth-1">
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th>
-                                                동해가 품은 아름다운 해변! 송지호해수욕장으로 초대합니다.
-                                                <span class="flt-r">2018-08-20 / 조회수 : 7</span>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <p>송지호는 호수 둘레길 4km인 동해안의 청정한 석호로 1977년에 주변이 국민관광지로 지정되어 자연호수와 죽도가 어우러져있는 경관이 수려한곳입니다.</p>
-                                                <p>특히 송지호 해수욕장과 왕곡마을,해양심층수단지, 철새관망쉼터 등 주변연계 관광여건이 매우 좋은곳으로, 오호리항 포구에서 싱싱한 활어회를 맛볼 수 있어 테마여행지로 각광을 받고있는 곳입니다. 또한 화진포해변과 성분이 같은 백사장이 펼쳐져 있는 곳으로 수심이 낮고 백사장 전면으로 주위의 경관이 수려하여 수십만명의 관광객들의 사랑을 한몸에 받고 있는 곳이기도 합니다.</p>
-                                                <p>해수욕장 북쪽 500m 거리에 위치한 송지호에서는 동해안의 대표적인 천연 석호와 겨울철새인 고니의 도래지로도 유명한 곳이며, 담수와 바닷물이 만나는 곳으로 바닷물고기와 민물고기가 함께 서식하여 바다 낚시터로도 유명한 곳입니다.</p>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="row-btn"><a href="#none" class="btn-list">목록</a></div>
+                <section class="board-area">
+                   <div class="board-box">
+                        <div class="area area-1">
+                            <table class="tbStyle tb-list">
+                                <colgroup>
+                                    <col class="nth-1">
+                                    <col class="nth-2">
+                                    <col class="nth-3">
+                                    <col class="nth-4">
+                                    <col class="nth-5">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>번호</th>
+                                        <th>제목</th>
+                                        <th>작성자</th>
+                                        <th>작성일</th>
+                                        <th>조회수</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><a href="">속초해수욕장에 오시거든.. 꼭 숙소는 오션투유리조트에서 머무시길 바랍니다.</a></td>
+                                        <td>오션투유</td>
+                                        <td>2018.09.05</td>
+                                        <td>59</td>
+                                    </tr>
+                                    <tr class="post">
+                                        <td colspan="5">
+                                            오션투유콘도에 다녀왔습니다 <br>
+                                            주말에 만만하게 가기에는 강원도 아무래도 좋은 듯 싶어서 찾아보다가 숙소 괜찮은 곳 중 오션투유콘도가 눈에 띄더라구요<br>
+                                            일단 고코투어라는 어플 이용해서 할인된 가격으로 저렴하게 다녀왔는데 방도 깔끔하고 시설도 아주 좋았습니다<br>
+                                            특히 바베큐장 있어서 좋더라구요<br>
+                                            <br>
+                                            조식은 먹을까 말까 고민을 많이 했는데 또 아침에 굳이 밖으로 어디 찾으러 나가기가 좀 귀찮기도 해서 오션투유콘도 내에 있는 조식을 먹었습니다 생각보다 음식도 많고 음식 맛도 굉장히 좋더라구요? 저희는 일찍 가서 먹었는데 조금 시간 지나니 사람들 많이 들어오더라구요 <br>
+                                            <br>
+                                            <img src="http://img.sampobeach.co.kr/board/post/oc2_img_1.jpg" alt="오션투유이미지" class="exImg">
+                                            <br>
+                                            <img src="http://img.sampobeach.co.kr/board/post/oc2_img_2.jpg" alt="오션투유이미지" class="exImg">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="row-btn cf">
+                                <div class="left">
+                                    <button type="button" class="appe-reset btn-list">목록</button>
+                                    <button type="button" class="appe-reset btn-modif" onclick="$('#pwdWrapper').show()">수정</button>
+                                </div>
+                                <div class="right">
+                                    <button type="button" class="appe-reset btn-answer">답변</button>
+                                    <button type="button" class="appe-reset btn-write">글쓰기</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                   </div>
+                </section>
             </div>
         </div>
         
-        <!-- footer -->
-        <footer id="footer" class="footer clr">
-            <div class="footer-area">
-                <p class="f-logo"><img src="../../img/common/logo_footer.png" alt="송지호해수욕장"></p>
-                
-                <div class="footer-box">
-                    <nav class="fnb">
-                        <ul class="menu clr">
-                            <li class="nth-1"><a href="../about/index.html">해수욕장 소개</a></li>
-                            <li class="nth-2"><a href="../tourist/index.html">주변관광지</a></li>
-                            <li class="nth-3"><a href="../goseong/index.html">고성8경</a></li>
-                            <li class="nth-4"><a href="../event/index.html">이벤트</a></li>
-                            <li class="nth-5"><a href="../waycome/index.html">오시는길</a></li>
-                            <li class="nth-6"><a href="../about/index.html">공지사항</a></li>
-                            <li class="nth-7"><a href="../board/memory_list.html">추억게시판</a></li>
-                        </ul>
-                    </nav>
-                    
+		<!-- footer -->
+		<footer class="footer">
+			<div class="footer-area">
+			    <p class="logo"><img src="http://img.songjihobeach.co.kr/common/logo.png" alt="송지호해수욕장 로고"></p>
+			    <div class="f-txt-box">
+                    <p class="p-0">본 사이트는 송지호해변을 사랑하는 마을 주민회에서 운영하고 있습니다.</p>
                     <address>
-                        본 사이트는 송지호해변을 사랑하는 마을 주민회에서 운영하고 있습니다.<br>
-                        오시는 길 : 강원도 고성군 죽왕면 오호리 송지호해변
-                        <small>copyright @ songjiho.co.kr All right reserved</small>
+                        <p>오시는 길 : 강원도 고성군 죽왕면 오호리 송지호해변</p>
+                        <small>COPYRIGHT @ SONGHIHOBEACH.CO.KR ALL RIGHT RESERVED</small>
                     </address>
-                </div>
-            </div>
-        </footer>
+			    </div>
+			</div>
+		</footer>
         
-    </div>	
-		
+	</div>
+
 </body>
+
 </html>

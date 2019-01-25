@@ -30,7 +30,7 @@
 .contents .board .pagenation a.next {text-indent: 1px; margin-left: 5px;}
 
 /*게시판 read*/
-.contents .board .tb-read {font-size: 18px;}
+.contents .board .tb-read {font-size: 18px; width: 100%} /* table 사이즈 100프로로 적용 180821 jhsong */
 .contents .board .tb-read th {padding: 15px 10px 15px 25px; font-size: 20px;}
 .contents .board .tb-read td {padding: 40px; line-height: 1.8;}
 .contents .board .tb-read thead tr {background: #f2f2f2; border-top: 1px solid #3c3b3b; border-bottom: 1px solid #d9d9d9;}

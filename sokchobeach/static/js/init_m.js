@@ -2,6 +2,10 @@ $(function () {
 	
 	sliderFn();
 	
+    if( $('div').hasClass('topbn-wrap') && $('.topbn-wrap').css('display') != 'none' ){
+        tbnheaderFn();
+    }
+	
 });
 
 function sliderFn() {
@@ -23,4 +27,27 @@ function sliderFn() {
 		}
 	});
 	
+}
+
+/* 상단띠배너 존재 시 헤더 */
+function tbnheaderFn() {
+    $(document).ready(function(){
+        var hd = $('header');
+        var tbnH = $('.topbn-wrap').height();
+        //console.log(tbnH, 'a')
+
+        hd.find('.wrap').css({'position' : 'relative'});
+
+        $(window).scroll(function(){
+            var num = $(this).scrollTop();
+
+
+             if( num > (tbnH-1) ){
+                 hd.css({'position' : 'fixed', 'padding-top' : 0 +'px'})
+             }else{
+                //console.log(tbnH)
+                 hd.css({'position' : 'absolute', 'padding-top' : tbnH +'px'})
+             }
+        });
+    });
 }

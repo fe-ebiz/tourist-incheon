@@ -26,4 +26,4 @@
 .contents .event .showing {font-size: 13px; color: #4c4c4c; margin-top: 10px; padding-top: 10px; word-break:keep-all; border-top: 1px solid #d2d2d2; line-height: 1.5;}
 .contents .event .area .h3-tit,
 .contents .event .area .evt-info dd,
-.contents .event .showing {letter-spacing: -0.9px;}
+.contents .event .showing {letter-spacing: -0.9px; word-break: keep-all;}

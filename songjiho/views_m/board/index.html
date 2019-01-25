@@ -8,130 +8,156 @@
 	<!--공통 폰트 및 css-->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
 	<link rel="stylesheet" href="http://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
-	<link rel="stylesheet" href="https://nurifunding.co.kr/static/fonts/NanumBarunGothic/nanumbarungothic.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.css">
-    <!--<link rel="stylesheet" href="http://static.songjihobeach.co.kr/css/common.css">-->
-	<link rel="stylesheet" href="../../static/css/reset.css">
-	<link rel="stylesheet" href="../../static/css/common_m.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+	<link rel="stylesheet" href="http://static.sampobeach.co.kr/css/reset.css">
+
+	<!-- css -->
+	<link rel="stylesheet" href="http://static.songjihobeach.co.kr/css/init_m_v1.1.css">
+	<!--<link rel="stylesheet" href="../../static/css/m/init_v1.1.css">-->
+	<link rel="stylesheet" href="http://static.sampobeach.co.kr/css/totalmobile.css">
 	
-	<!--css-->
-	<!--<link rel="stylesheet" href="http://static.songjihobeach.co.kr/css/board/init_m.css">-->
-	<link rel="stylesheet" href="../../static/css/board/init_m.css">
-	
-	<!--js-->
+	<!-- js -->
 	<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-	<!--<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-	<!--<script src="http://static.songjihobeach.co.kr/js/common_m.js"></script>-->
-	<script src="../../static/js/common_m.js"></script>
-	<script src="../static/js/board/init_m.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+	<script src="http://static.songjihobeach.co.kr/js/init_m_v1.1.js"></script>
+	<!--<script src="../../static/js/m/init_v1.1.js"></script>-->
 </head>
-<body>
 
-    <div class="wrapper">
+<body class="Board">
 
-        <!-- header -->
-        <header id="header" class="header">
-            <div class="header-area">
-               <div class="header-box">
-                    <h1 class="logo"><a href="../index.html"><img src="../../img/common/logo.png" alt="송지호해수욕장"></a></h1>
-
-                    <button role="button" class="nav-tab" title="메뉴 열림">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </button>
-               </div>
-				
-               <div class="gnb-box" style="display:none">
-                    <nav class="gnb">
-                        <ul class="menu">
-                            <li class="nth-1"><a href="../about/index.html">해수욕장 소개</a></li>
-                            <li class="nth-2"><a href="../tourist/index.html">주변관광지</a></li>
-                            <li class="nth-3"><a href="../goseong/index.html">고성8경</a></li>
-                            <li class="nth-4"><a href="../event/index.html">이벤트</a></li>
-                            <li class="nth-5"><a href="../waycome/index.html">오시는길</a></li>
-                            <li class="nth-6 on"><a href="../board/index.html">공지사항</a></li>
-                            <li class="nth-7"><a href="../board/memory_list.html">추억게시판</a></li>
-                        </ul>
-                    </nav>
-               </div>
-            </div>
-        </header>
-        
-        
-        <!-- content -->
-        <div class="contents board">
-            <div class="wrap clr">
-                <!-- content visual -->
-                <div class="top-area">
-                    <div class="top-box">
-                        <h2 class="tit">공지사항</h2>
-                        <p class="sub-logo-txt">SONGJIHO BEACH</p>
-                    </div>
+	<h1 class="hidden">송지호해수욕장</h1>
+	
+	<div class="wrapper">
+       
+        <!-- 상단띠배너 -->
+        <div class="topbn-wrap clr">
+	        <ul class="slide-banner clr">
+	            <li class="bn-list-1 bn-goco">
+	                <a href="#none" target="_blank" class="bn-link" title="고코투어 할인구매하기"></a>
+	            </li>
+	            <li class="bn-list-2 bn-ocean">
+	                <a href="#none" target="_blank" class="bn-link" title="오션투유리조트 자세히보기"></a>
+	            </li>
+	        </ul>
+           
+            <script type="text/javascript">
+                //181017 스크립트 수정
+                $(document).ready(function(){
+                    $(".topbn-wrap .slide-banner").bxSlider({
+                        mode: 'fade',
+                        auto: true,
+                        controls : false,
+                        pager : false,
+                        autoControls: true,
+                        autoHover: true,
+                        speed: 500
+                    });
+                });
+            </script>
+        </div>
+		
+		<!-- header -->
+		<header class="header">
+             <div class="header-area">
+                 <div class="header-box clr">
+                     <h1 class="logo"><a href="./index.html"><img src="http://img.songjihobeach.co.kr/common/logo.png" alt="송지호해수욕장 로고"></a></h1>
+                     <nav class="gnb">
+                         <ul class="menu clr">
+                             <li class="itme-1"><a href="./index.html">해수욕장소개</a></li>
+                             <li class="itme-2"><a href="./index.html">주변관광지</a></li>
+                             <li class="itme-3"><a href="./index.html">고성8경</a></li>
+                             <li class="itme-4"><a href="./index.html">오시는 길</a></li>
+                             <li class="itme-5 on page-move"><a href="index.html">추억게시판</a></li>
+                         </ul>
+                     </nav>
+                 </div>
+             </div>
+		</header>
+		
+		<!-- contents -->
+		<div class="contents">
+            <section class="subVisual">
+                <div class="mainTxt">
+                    <h2>추억게시판</h2>
+                    <p class="p-2">SONGJIHO BEACH</p>
                 </div>
-                
-                <!-- content main -->
-                <div class="con-sec">
-                    <div class="con-area">
-                        <h3 class="tit"><span class="tit-txt">공지사항</span><span class="tit-sub-txt">SONGJIHO BEACH</span></h3>
-                        
-                        
-                        <div class="board-area list">
-                            <div class="board-list">
-                                <table class="tbStyle">
-                                    <colgroup>
-                                        <col class="nth-1">
-                                        <col class="nth-2">
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th>제목</th>
-                                            <th>작성일</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="t-left"><a href="index_read.html">동해가 품은 아름다운 해변! 송지호해수욕장으로 초대합니다.</a></td>
-                                            <td>2018.08.20</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="page-box">
-                                    <div class="pagenation" id="pagenation">
-                                        <a class="prev" href="">&lt;</a>
-                                        <a class="on" href="">1</a>
-                                        <a href="">2</a>
-                                        <a href="">3</a>
-                                        <a class="next" href="">&gt;</a>
-                                    </div>
-                                </div>
+            </section>
+       
+            <div class="con-sec">
+                <h3 class="con-tit"><span class="row-1">추억게시판</span><span class="sokcho">SONGJIHO BEACH</span></h3>
+            
+                <section class="board-area">
+                   <div class="board-box">
+                        <div class="area area-1">
+                            <table class="tbStyle tb-list">
+                                <colgroup>
+                                    <col class="nth-1">
+                                    <col class="nth-2">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>제목</th>
+                                        <th>작성자</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="">조개잡이가 이렇게 재미있는 것일 줄이야... 완전행복</a></td>
+                                        <td>오션매니아</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="">여기선 오션투유리조트가 완전 딱이군요.</a></td>
+                                        <td>바다소년</td>
+                                    </tr>
+                                    <tr class="reply">
+                                        <td><a href=""><span class="re-2">[▶답변]</span> 방문해 주셔서 감사합니다.</a></td>
+                                        <td>오션투유매니저</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="">조개잡이가 이렇게 재미있는 것일 줄이야... 완전행복</a></td>
+                                        <td>오션매니아</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="pagenation" id="pagenation">
+                                <a class="prev" href="">&lt;</a>
+                                <a class="on" href="">1</a>
+                                <a href="">2</a>
+                                <a href="">3</a>
+                                <a class="next" href="">&gt;</a>
                             </div>
                         </div>
-                        
-                    </div>
-                </div>
-                
+                        <div class="row-search">
+                            <div class="sltDiv">
+                                <span class="sltArr"></span>
+                                <select name="" id="" class="category appe-reset">
+                                    <option value="">제목</option>
+                                    <option value="">키워드</option>
+                                </select>
+                            </div>
+                            <input type="text" value="" class="appe-reset keword">
+                            <input type="button" value="검색" class="appe-reset btn-search">
+                            <button type="button" class="appe-reset btn-write">글쓰기</button>
+                        </div>
+                   </div>
+                </section>
             </div>
         </div>
         
-        <!-- footer -->
-        <footer id="footer" class="footer clr">
-            <div class="footer-area">
-                <p class="f-logo"><img src="../../img/common/logo_footer.png" alt="송지호해수욕장"></p>
-                
-                <div class="footer-box">
+		<!-- footer -->
+		<footer class="footer">
+			<div class="footer-area">
+			    <p class="logo"><img src="http://img.songjihobeach.co.kr/common/logo.png" alt="송지호해수욕장 로고"></p>
+			    <div class="f-txt-box">
+                    <p class="p-0">본 사이트는 송지호해변을 사랑하는 마을 주민회에서 운영하고 있습니다.</p>
                     <address>
-                        본 사이트는 송지호해변을 사랑하는 마을 주민회에서 운영하고 있습니다.<br>
-                        오시는 길 : 강원도 고성군 죽왕면 오호리 송지호해변
-                        <small>copyright @ songjiho.co.kr All right reserved</small>
+                        <p>오시는 길 : 강원도 고성군 죽왕면 오호리 송지호해변</p>
+                        <small>COPYRIGHT @ SONGHIHOBEACH.CO.KR ALL RIGHT RESERVED</small>
                     </address>
-                </div>
-            </div>
+			    </div>
+			</div>
         </footer>
-        
-    </div>	
 		
+	</div>
 </body>
 </html>

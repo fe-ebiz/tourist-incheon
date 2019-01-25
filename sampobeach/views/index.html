@@ -17,11 +17,13 @@
 	<!--css-->
 	<link rel="stylesheet" href="http://static.sampobeach.co.kr/css/common.css">
 	<link rel="stylesheet" href="http://static.sampobeach.co.kr/css/init.css">
-<!--
-	<link rel="stylesheet" href="../static/css/common.css">
+	<link rel="stylesheet" href="http://static.sampobeach.co.kr/css/totalweb.css">
+
+	<!-- <link rel="stylesheet" href="../static/css/common.css">
 	<link rel="stylesheet" href="../static/css/init.css">
--->
-	
+	<link rel="stylesheet" href="../static/css/totalweb.css"> -->
+
+	<script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
 	<!--js-->
 	<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
@@ -37,6 +39,33 @@
 
 	<div class="wrapper">
 		
+		<style type="text/css">.contents{top:75px;} .footer{top:85px;}</style>
+		<div class="topbn-wrap clr">
+			<!--
+			<img src="http://img.sampobeach.co.kr/tbn_goco.jpg" alt="7만원 쿠폰팩으로 과감하게 득템하는 할인찬스! 고코투어에서 최고의 할인여행을 만나보세요! 할인구매하기" >
+			<img src="http://img.sampobeach.co.kr/tbn_ocean.jpg" alt="설악, 속초, 고성에 위치한 최고의 바다전망! 아름다운 해변 리조트로 초대합니다! 자세히보기" >
+			-->
+			<div class="bx-wrapper" style="max-width: 100%;"><div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 77px;"><ul class="slide-banner clr" style="width: auto; position: relative;">
+				<li class="bn-list-1 bn-goco" aria-hidden="true" style="float: none; list-style: none; position: absolute; width: 1843px; z-index: 0; display: none;">
+					<a href="http://www.go.co.kr" target="_blank" class="bn-link" title="고코투어 할인구매하기"></a>
+				</li>
+				<li class="bn-list-2 bn-ocean" aria-hidden="false" style="float: none; list-style: none; position: absolute; width: 1843px; z-index: 50;">
+					<a href="http://www.ocean2you.co.kr" target="_blank" class="bn-link" title="오션투유리조트 자세히보기"></a>
+				</li>
+						</ul></div><div class="bx-controls bx-has-controls-auto"><div class="bx-controls-auto"><div class="bx-controls-auto-item"><a class="bx-start" href="">Start</a></div><div class="bx-controls-auto-item"><a class="bx-stop active" href="">Stop</a></div></div></div></div>
+		   
+			<script type="text/javascript">
+				$(".topbn-wrap .slide-banner").bxSlider({
+					mode: 'fade',
+					auto: true,
+					controls : false,
+					pager : false,
+					autoControls: true,
+					autoHover: true,
+					speed: 500
+				});
+			</script>
+		</div>
 		<header class="header">
 			<div class="wrap container">
 				<h1 class="logo"><a href="./index.html"><img src="http://img.sampobeach.co.kr/common/logo.png" alt="삼포해수욕장 로고"> <span class="skip">삼포해수욕장 삼포비치</span></a></h1>
@@ -82,11 +111,16 @@
 					</div>
 				</div>
 				
+				<!-- 190125 -->
 				<div class="weather">
 					<p class="area">
 						<span class="s-1">2018.07.02 (월)</span>
 						<span class="s-2">고성날씨 : 비</span>
 						<span class="s-3"><span class="big">21</span><span class="c">℃</span></span>
+						<span class="s-4">
+							<img src="http://img.sampobeach.co.kr/weather/finedust.png" alt="미세먼지">
+							<span class="txt-dust">미세먼지 - <span class="grade">약간나쁨</span></span>
+						</span>
 						<img src="http://img.sampobeach.co.kr/weather/rain.png" alt="날씨">
 					</p>
 				</div>
@@ -99,50 +133,45 @@
 						<a href="" class="plus"><span class="obj"></span></a>
 					</h2>
 					<div class="area cf">
-						<figure class="evt-img">
-							<img src="http://img.sampobeach.co.kr/event/midnight.jpg" alt="미드나잇피크닉">
-							<iframe src="https://www.youtube.com/embed/n0foR1sU99Y?autoplay=1" frameborder="0" allowfullscreen></iframe>
-						</figure>
+						<figure class="evt-img"><img src="http://img.ocean2you.co.kr/renew/event/event_sohwaghaeng.jpg" alt="오션투유 소확행 불꽃캠프파이어 축제"></figure>
 						<div class="evt-info">
-							<h3 class="h3-tit">2018 미드나잇 피크닉 페스티벌</h3>
+							<h3 class="h3-tit">2018년 12월 31일<br>소확행 불꽃 캠프파이어 축제</h3>
 							<div class="detail">
 								<dl> 
 									<dt>기간</dt>
-									<dd>2018.07.13(금) ~ 15(일) 3일간</dd>
+									<dd>2018년 12월 31일(월)</dd>
 								</dl>
 								<dl>
 									<dt>주최</dt>
-									<dd>미드나잇 피크닉 페스티벌</dd>
+									<dd>오션투유리조트</dd>
 								</dl>
 								<dl>
 									<dt>요금</dt>
-									<dd>유료</dd>
+									<dd>무료</dd>
 								</dl>
 								<dl>
 									<dt>시간</dt>
-									<dd>00:00 ~ 24:00</dd>
+									<dd>일몰 이후 캠프파이어<br>23:30 새해맞이 불꽃놀이 진행</dd>
 								</dl>
 								<dl>
-									<dt>비고</dt>
-									<dd>
-										삼포해변 비치클럽 (서핑 페스티벌)<br>
-										삼포해변 비치콘서트 (음악 페스티벌)
-									</dd>
+									<dt>위치</dt>
+									<dd>강원도 고성 삼포해수욕장</dd>
 								</dl>
 							</div>
 						</div>
 					</div>
 					<div class="showing">
-						삼포해변에서 펼쳐지는 국내 정상급 클럽 DJ들과 함께하는 색다르고 화끈한 비치클럽 미드나잇 피크닉 페스티벌로 초대합니다.<br>
-						요즘 여름은 서핑이 대세~  삼포해변에서 배우고 즐기는 서핑 페스티벌 !    한 여름밤, 화끈한 밤의 국내 최정상 뮤지션들의 화끈한 무대 !<br>
-						서핑과 음악, 비치라이프를 통한 한여름의 일상탈출 !  1년에 한번 오는 절호의 찬스를 절대 놓치지 마세요 !
+						2018년을 정리하는 소소하지만 확실한 행복<br>
+						2018년의 마지막날, 사랑하는 가족, 친구와 함께 아름다운 삼포해변의 밤하늘을 만나보세요.<br> 
+						별과 바람, 푸른바다를 배경으로 하는 삼포해변에서 불꽃축제와 캠프파이어! “고성 오션투유 삼포해수욕장 소/확/행 불꽃 캠프파이어 축제”로 초대합니다.<br>
+						※ 본 행사는 우천 시 취소될 수 있습니다.
 					</div>
 					
 					<!-- 180803 연날리기 추가 -->
 					<div class="area cf">
 						<figure class="evt-img"><img src="http://img.sampobeach.co.kr/event/ocKite.jpg" alt="삼포해수욕장 연날리기축제"></figure>
 						<div class="evt-info">
-							<h3 class="h3-tit">2018 고성 오션투유 삼포해수욕장 연날리기 축제</h3>
+							<h3 class="h3-tit">2019 고성 오션투유 삼포해수욕장 연날리기 축제</h3>
 							<div class="detail">
 								<dl> 
 									<dt>기간</dt>
@@ -172,7 +201,7 @@
 					</div>
 					<div class="showing">
 						매주 일요일 강원도 고성, 아름다운 삼포해수욕장의 맑고 청명한 하늘에 알록달록 연을 수놓는 장관이 펼쳐집니다.<br>
-						사랑하는 가족들과 함께 오션투유에서 소원과 희망을 담은 연을 하늘 높이 날리는 2018 가족여행과 함께하는 고성 오션투유 삼포해수욕장 연날리기 축제를 함께 즐겨보세요.<br>
+						사랑하는 가족들과 함께 오션투유에서 소원과 희망을 담은 연을 하늘 높이 날리는 2019 가족여행과 함께하는 고성 오션투유 삼포해수욕장 연날리기 축제를 함께 즐겨보세요.<br>
 						※ 본 행사는 우천시 취소될 수도 있습니다.
 					</div>
 				</div>

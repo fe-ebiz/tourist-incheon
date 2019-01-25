@@ -17,9 +17,16 @@
 .topbn-wrap .slide-banner li .bn-link {position: absolute; display: block; box-sizing: border-box; width: 100%; height: 100%; top: 0; left: 0;/* max-height: 91px;*/}
 .topbn-wrap .slide-banner .bn-goco .bn-link {background: url(http://img.sampobeach.co.kr/m/tbn_goco.jpg) no-repeat center center; background-size: cover;}
 .topbn-wrap .slide-banner .bn-ocean .bn-link {background: url(http://img.sampobeach.co.kr/m/tbn_ocean.jpg) no-repeat center center; background-size: cover;}
+.topbn-wrap .slide-banner .bn-ramada .bn-link {background: url(http://img.sampobeach.co.kr/m/tbn_ramada.jpg) no-repeat center center; background-size: cover;}
+.topbn-wrap .slide-banner .bn-sea .bn-link {background: url(http://img.sampobeach.co.kr/m/tbn_seacruise.jpg) no-repeat center center; background-size: cover;}
 
+/* 181108 서브페이지 고코투어, 오션투유 링크배너 추가_다솜 */
+.rWing {z-index: 10; position: fixed; top: 206px; right: 6px;}
+.rWing a {position: relative; display: block; width: 80px;}
+.rWing a + a {margin-top: 4px;}
+.rWing a img {display: block; width: 100%;}
 
-
-
-
-
+/* 미세먼지 추가 */
+.weather .area .s-4 {font-weight: 700; padding-left: 0px;}
+.weather .area .s-4 > * {vertical-align: middle;}
+.weather .area .s-4 img {width: 15px !important; position: relative !important; float: none !important; margin-right: 2px;}
