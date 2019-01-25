@@ -43,6 +43,16 @@
 .contents .main .weather .area .s-3 .c {font-family: "Noto Sans KR";}
 .contents .main .weather .area img {position: absolute; right: 0; bottom: 0; width: 62px;}
 
+/* 190125_죽기전에 꼭 가봐야할 국내 여행 도서 추가  */
+.contents .main .book-area {cursor: pointer; position: relative; box-sizing: border-box; width: 100%; padding: 12px 20px 13px 24px; background: #000;}
+.contents .main .book-area .img-book {float: left; display: block; width: 14%; position: relative;}
+.contents .main .book-area .img-book img {width: 100%;}
+.contents .main .book-area .book-txt-box {float: left; display: block; width: 76%; position: relative; padding-left: 11px;}
+.contents .main .book-area .book-txt-box p {margin-top: 2px; font-size: 12px; letter-spacing: -0.7px; word-break: keep-all; line-height: 16px; color: #fff;}
+.contents .main .book-area .book-txt-box p em {font-weight: 600; color: #fff76f;}
+.contents .main .book-area .book-txt-box .p-1 {}
+.contents .main .book-area .book-txt-box .p-2 {}
+
 /*공통스타일*/
 .contents .wrap.cmStyle {padding: 20px 0;}
 .contents .wrap.cmStyle .tit {font-size: 18px; text-align: center;}
@@ -118,3 +128,13 @@
 .contents .waycome .way-info dd p.dot:before {content: "-"; display: inline-block; position: absolute; left: 0;}
 .contents .waycome .way-map {position: relative; margin: 0 auto;}
 .contents .waycome .way-map > div {margin: 0 auto;}
+
+
+
+@media (max-device-width:320px){
+    /* 190125_죽기전에 꼭 가봐야할 국내 여행 도서 추가  */
+    .contents .main .book-area {padding: 11px 18px 12px 20px;}
+    .contents .main .book-area .img-book {width: 13%;}
+    .contents .main .book-area .book-txt-box {width: 77%; padding-left: 8px;}
+    .contents .main .book-area .book-txt-box p {margin-top: 0; font-size: 11px;}
+}

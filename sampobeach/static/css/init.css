@@ -2,7 +2,7 @@
 
 
 /*메인비쥬얼*/
-.contents .main {}
+.contents .main {position: relative;}
 .contents .main .slide {padding-top: 205px; box-sizing: border-box; color: #fff; height: 894px;}
 .contents .main .slide .mainTxt > * {text-shadow: 3px 3px 2px rgba(0,0,0, .25); letter-spacing: -0.7px;}
 .contents .main .slide .mainTxt .p-1 {font-size: 26px; text-indent: 2px;}
@@ -38,6 +38,16 @@
 .contents .main .weather .area .s-3 .c {font-family: "Noto Sans KR";}
 .contents .main .weather .area img {position: absolute; right: 0; bottom: 0;}
 
+/* 190125_죽기전에 꼭 가봐야할 국내 여행 도서 추가  */
+.contents .main .book-area {position: absolute; width: 1180px; bottom: 300px; left: 50%; margin-left: -590px;}
+.contents .main .book-area .img-book {float: left; display: block; position: relative;}
+.contents .main .book-area .img-book img {width: 85px;}
+.contents .main .book-area .book-txt-box {float: left; display: block; position: relative; margin-left: 16px;}
+.contents .main .book-area .book-txt-box p {font-size: 18px; letter-spacing: -0.7px; line-height: 26px; color: #fff;}
+.contents .main .book-area .book-txt-box p em { font-weight: 600; color: #fff76f;}
+.contents .main .book-area .book-txt-box .p-1 {}
+.contents .main .book-area .book-txt-box .p-2 {margin-top: 1px;}
+
 /*공통스타일*/
 .contents .wrap.cmStyle {padding: 50px 0;}
 .contents .wrap.cmStyle .tit {font-size: 34px;}
@@ -61,7 +71,7 @@
 .contents .event .tit .plus .obj:after {width: 1px; height: 15px; background: #a4a4a4; left: 50%; margin-top: -7px; top: 50%;}
 */
 .contents .event .area {margin-top: 12px;}
-.contents .event .area .evt-img {float: left;}
+.contents .event .area .evt-img {position: relative; float: left; width: 766px;}
 .contents .event .area .evt-img img {display: block; box-sizing: border-box; border: 1px solid #b0ada8;}
 .contents .event .area .evt-img iframe {width: 100%; height: 432px; margin-top: 20px;}
 .contents .event .area .evt-info {float: right; width: 380px;}
