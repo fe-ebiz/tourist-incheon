@@ -5,7 +5,7 @@
 @import url(http://static.nurifunding.co.kr/fonts/NanumBarunGothic/nanumbarungothic.css);
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
-body {min-width: 1180; font-family: 'Noto Sans KR', 'Nanum Square', 'Nanum Gothic', 'Malgun Gothic', sans-serif; font-weight: 400; letter-spacing: -0.5px; color: #535353;}
+body {min-width: 1180px; font-family: 'Noto Sans KR', 'Nanum Square', 'Nanum Gothic', 'Malgun Gothic', sans-serif; font-weight: 400; letter-spacing: -0.5px; color: #535353;}
 input, textarea, label, button  {font-family: 'Noto Sans KR', 'Nanum Square', 'Nanum Gothic', 'Malgun Gothic', sans-serif; font-weight: 400; letter-spacing: -0.5px;}
 img {max-width: 100%;}
 
@@ -16,6 +16,7 @@ img {max-width: 100%;}
 
 /* 띠배너 */
 .topbn-wrap {position: relative !important;}
+.topbn-wrap.on {position: fixed !important;}
 
 /* header */
 .header {z-index: 999; position: relative; box-sizing: border-box; width: 100%; margin-top: 0 !important; padding-top: 0 !important;}
@@ -58,10 +59,29 @@ img {max-width: 100%;}
 /* before가 없는 경우 */
 .Main .contents .con-tit.no-line {padding-left: 0;}
 .Main .contents .con-tit.no-line:before {content: none;}
-/* sokcho가 위로. 텍스트 2줄 */
-/*.Main .contents .con-tit.type-2 {}
-.Main .contents .con-tit.type-2 .row-1 {padding-top: 30px; height: 43px; line-height: 43px;}
-.Main .contents .con-tit.type-2 .sokcho {position: absolute; top: 0; left: 20px; height: 30px; line-height: 30px;}*/
+/* row1,2 텍스트 2줄 */
+.Main .contents .con-tit.type-2 span {display: inline; height: auto; letter-spacing: -0.9px; line-height: 1;}
+.Main .contents .con-tit.type-2 [class*=row-] {display: block; font-weight: normal;}
+.Main .contents .con-tit.type-2 .row-1 {font-size: 24px; line-height: 24px;}
+.Main .contents .con-tit.type-2 .row-1 .sokcho {font-size: 16px; line-height: 24px; vertical-align: bottom; font-weight: 600;}
+.Main .contents .con-tit.type-2 .row-2 {font-size: 40px; margin-top: 8px;}
+.Main .contents .con-tit.type-2 .row-2 span {font-size: 40px;}
+
+/* 서브페이지 비주얼영역 */
+.subVisual {position: relative; width: 100%; margin: 0 auto; padding: 68px 0 65px 0;  text-align: center; color: #fff; background: url(http://img.songjihobeach.co.kr/common/bg_sub_top.jpg) no-repeat center center; background-size: cover;}
+/* 게시판 비주얼 */
+.subVisual .mainTxt {position: relative; display: inline-block; margin: 0 auto; padding: 30px 0 35px 60px; text-align: left; background: url(http://img.songjihobeach.co.kr/common/bg_top_box.png) no-repeat 0 0;}
+.subVisual .mainTxt h2 {font-size: 60px; font-weight: 500; line-height: 60px;}
+.subVisual .mainTxt .p-2 {margin: 11px 0 0 5px; font-size: 23px; line-height: 23px;}
+/* 비주얼 type-2 */
+.subVisual.type-2 {padding: 75px 0 50px;}
+.subVisual.type-2 .mainTxt {padding: 0; text-align: center; background: none;}
+.subVisual.type-2 .mainTxt * {text-shadow: 3px 3px 4px rgba(10, 2, 4, 0.29);}
+.subVisual.type-2 .mainTxt h2 {margin: 10px auto 17px; font-size: 50px; font-weight: 400; line-height: 1;}
+.subVisual.type-2 .mainTxt p {line-height: 1;}
+.subVisual.type-2 .mainTxt .p-1 {font-size: 22px;}
+.subVisual.type-2 .mainTxt .p-2 {font-size: 16px; font-weight: 600;}
+
 
 /* 메인 비주얼 */
 .Main .visual-sec {background: rgba(0, 0, 0, 0.8);}
@@ -146,6 +166,30 @@ img {max-width: 100%;}
 .Main .view-sec .con-area .gs-list .txt-box .adr {margin-left: 4px; padding: 19px 0 16px; font-size: 20px; line-height: 24px; color: #808080}
 .Main .view-sec .con-area .gs-list .txt-box .txt {margin-left: 4px; font-size: 24px; line-height: 30px;}
 
+/* 속초8경 type-2 */
+.Main .view-sec.type-2 {padding-bottom: 70px; background: #fff;}
+.Main .view-sec.type-2 .con-area {margin-top: 0;}
+.Main .view-sec.type-2 .view-box {position: relative; padding-top: 70px;}
+.Main .view-sec.type-2 .tit {text-align: center;}
+.Main .view-sec.type-2 .tit .sokcho {text-transform: uppercase; font-size: 18px; display: inline-block; text-indent: 2px; margin-bottom: 2px; background: #fff; border: 2px solid #61a0c8; padding: 8px 9px 6px; line-height: 1;}
+.Main .view-sec.type-2 .tit .sokcho-2 {font-size: 18px;}
+.Main .view-sec.type-2 .tit .big {display: block; letter-spacing: -1px; margin-top: 5px; font-size: 40px;} 
+.Main .view-sec.type-2 .p-0, .Main .view .p-1 {margin-top: 7px; font-size: 20px; line-height: 32px; text-align: center; color: #434343;}
+.Main .view-sec.type-2 .p-1 {margin-top: 10px; font-size: 18px; text-align: center;}
+.Main .view-sec.type-2 .area {margin-top: 22px;}
+.Main .view-sec.type-2 .area .list > li {float: left; box-sizing: border-box; width: 25%; margin-top: 14px; /*margin-top: 28px;*/ padding-left: 10px; overflow: hidden;}
+.Main .view-sec.type-2 .area .list > li:first-child {margin-left: 0;}
+.Main .view-sec.type-2 .area .list > li .tour-img {box-sizing: border-box; text-align: center;}
+.Main .view-sec.type-2 .area .list > li dl {margin-top: 15px; letter-spacing: -0.9px;}
+.Main .view-sec.type-2 .area .list > li dl dt {font-size: 15px; color: 0; padding-bottom: 10px; margin-bottom: 0px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.Main .view-sec.type-2 .area .list > li dl dt h5 {font-size: 22px; font-weight: 700; color: #000; text-align: center; padding-top: 1px;}
+.Main .view-sec.type-2 .area .list > li dl dt h5 .num {position: relative; top: -1px;background: #1d5e87; color: #fff; display: inline-block; width: 32px; height: 32px; border-radius: 50%; line-height: 1.5; vertical-align: middle; font-weight: 400;}
+.Main .view-sec.type-2 .area .list > li dl dd {overflow: hidden; position: relative; display: block; padding: 0 3px; font-size: 17px; color: #4c4c4c; line-height: 24px; letter-spacing: -1px; word-wrap: break-word; word-break: keep-all;}
+.Main .view-sec.type-2 .view-map {position:relative; overflow: hidden; width: 100%; margin: 23px auto 28px; box-sizing: border-box; border: 1px solid #a29fa0; border-radius: 15px;}
+.Main .view-sec.type-2 .view-map img {width:100%}
+.Main .view-sec.type-2 .map-txt {font-size:18px; line-height:24px; text-align:center; letter-spacing:-1px; color:#434343}
+
+
 /* 오시는 길 */
 .Main .waycome-sec {padding: 50px 0 93px;}
 .Main .waycome-sec .con-area {height: 630px; padding-top: 44px;}
@@ -173,15 +217,40 @@ img {max-width: 100%;}
 .Main .waycome-sec .con-area .btn-box .btn-naver {}
 .Main .waycome-sec .con-area .btn-box .btn-daum {margin-left: 12px;}
 
+
+/*
+  Event - 속초해수욕장기준  
+ */
+/* event common */
+.Event .container:before, .Evnet .container:after {content: ""; display: table;}
+.Event .container:after {clear: both;}
+.Event .container {position: relative; width: 1180px; margin: 0 auto;}
+/* event list */
+.Event .wrap.cmStyle {padding: 50px 0;}
+.Event .event:nth-child(2n-1) {background: #f1f1f1;}
+.Event .event .area {margin-top: 12px;}
+.Event .event .area .evt-img {float: left; width: 768px;}
+.Event .event .area .evt-img img {display: block; box-sizing: border-box; border: 1px solid #b0ada8;}
+.Event .event .area .evt-img iframe {width: 100%; height: 432px; margin-top: 20px;}
+.Event .event .area .evt-info {float: right; width: 380px;}
+.Event .event .area .evt-info .h3-tit {font-size: 26px; color: #5a5a5a; font-weight: 700; margin-top: -3px; padding-bottom: 12px; border-bottom: 1px solid #a8a8a8; word-break: keep-all;}
+.Event .event .area .evt-info .detail {padding-top: 5px;}
+.Event .event .area .evt-info dl {margin-top: 10px; font-size: 20px; line-height: 1.5;}
+.Event .event .area .evt-info dl:after {content: ""; display: table; clear: both;}
+.Event .event .area .evt-info dt, .contents .event .area .evt-info dd {float: left;}
+.Event .event .area .evt-info dt {color: #008ead; font-weight: 700;}
+.Event .event .area .evt-info dd {margin-left: 25px; color: #000;}
+.Event .event .showing {font-size: 18px; color: #4c4c4c; margin-top: 25px; line-height: 1.8;}
+.Event .event .area .evt-info .h3-tit,
+.Event .event .area .evt-info dd,
+.Event .event .showing {letter-spacing: -0.9px; word-break: keep-all;}
+/* ie8 */
+.ie8 .Event .evt-2, .ie8 .Event .evt-4, .ie8 .Event .evt-6, .ie8 .Event .evt-8, .ie8 .Event .evt-10, .ie8 .Event .evt-12, .ie8 .Event .evt-14 {background: #f1f1f1;}
+
+
 /*
   Board
  */
-/* 게시판 비주얼 영역 */
-.Board .subVisual {position: relative; width: 100%; margin: 0 auto; padding: 68px 0 65px 0;  text-align: center; color: #fff; background: url(http://img.songjihobeach.co.kr/common/bg_sub_top.jpg) no-repeat center center; background-size: cover;}
-.Board .subVisual .mainTxt {position: relative; display: inline-block; margin: 0 auto; padding: 30px 0 35px 60px; text-align: left; background: url(http://img.songjihobeach.co.kr/common/bg_top_box.png) no-repeat 0 0;}
-.Board .subVisual .mainTxt h2 {font-size: 60px; font-weight: 500; line-height: 60px;}
-.Board .subVisual .mainTxt .p-2 {margin: 11px 0 0 5px; font-size: 23px; line-height: 23px;}
-
 /* 게시판 */
 .Board .con-sec {position: relative;}
 /* 게시판 tit */
@@ -259,7 +328,8 @@ img {max-width: 100%;}
 .Board .board-area .tb-write tbody tr th {font-size: 18px; background: #F2F2F2; text-align: center;}
 .Board .board-area .tb-write tbody tr td {font-size: 16px; padding: 10px 12px;}
 .Board .board-area .tb-write .appe-reset,
-.Board .board-area .tb-write input[class*=w-] {box-sizing: border-box; border: 1px solid #c9c9c9; height: 37px; padding-left: 15px;}
+.Board .board-area .tb-write input[class*=w-] {box-sizing: border-box; border: 1px solid #c9c9c9; height: 37px;}
+.Board .board-area .tb-write input[class*=w-] {padding-left: 15px;}
 .Board .board-area .tb-write .w-1 {width: 200px;}
 .Board .board-area .tb-write .w-2 {width: 280px;}
 .Board .board-area .tb-write .w-full {width: 100%;}

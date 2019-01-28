@@ -15,6 +15,7 @@ img {max-width: 100%;}
 /* 탑 배너 스타일 재수정 */
 .topbn-wrap {position: relative !important;}
 .topbn-wrap + .header {padding-top: 0 !important;}
+.topbn-wrap.fixed {position: fixed !important;}
 
 .wrap {}
 .container, .tit-box {width: 1180px; margin: 0 auto;}

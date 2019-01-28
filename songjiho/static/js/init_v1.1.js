@@ -28,19 +28,19 @@ function comFn(){
     var content = $(".contents"), mainVisual = $("#visual .bg-visual"), visualTxt = $('#visual .visual-txt');
     var ht = $(window).height();
     var hdH = $('.header').innerHeight();
-    var topBn = $('.topbn-wrap').height();
+    var topBnH = $('.topbn-wrap').height();
     var visualTxtH = visualTxt.height();
     
     $('.header').css({'height' : hdH +'px'});	
     visualTxt.css({'margin-top' : -(visualTxtH/2) +'px'});
-    mainVisual.css({'height' : (ht - (hdH+topBn)) +'px'});	
+    mainVisual.css({'height' : (ht - (hdH+topBnH)) +'px'});	
     
-    menuFn();
+    menuFn(topBnH);
 }
 
 
 /* 메뉴 */
-function menuFn(){
+function menuFn(topBnH){
     var hd = $('.header');
     var scltop = $(window).scrollTop();
     var hdH = hd.innerHeight();
@@ -60,7 +60,7 @@ function menuFn(){
                 var target = $(this).attr('href');
                 var offsetTop;
 
-                if( target == '#top' ){
+                if( target == '/' ){
                     $('html, body').stop().animate({
                         scrollTop : 0
                     }, time);
@@ -69,7 +69,7 @@ function menuFn(){
                     offsetTop = $(target).offset().top;
 
                     $('html, body').stop().animate({
-                        scrollTop : (offsetTop-(hdH-1))
+                        scrollTop : (offsetTop-(hdH+topBnH))
                     }, time);
                 }
 
@@ -90,15 +90,18 @@ function menuFn(){
 function scrollMenu(scltop, hd){
     var section = $('section[class*="-sec"]');
     var menu = $('.header .menu li');
-    var topBn = $('.topbn-wrap').height();
+    var topBn = $('.topbn-wrap');
+    var topBnH = $('.topbn-wrap').height();
     var visualH = $("#visual").height();
     var hdH = hd.innerHeight();
     
     //header
-    if( scltop < topBn ){
-        hd.removeClass('on');
+    if( scltop < topBnH ){
+        hd.removeClass('on').find('.header-area').css({'top' : 0+'px'});
+        topBn.removeClass('on');
     }else {
-        hd.addClass('on');
+        hd.addClass('on').find('.header-area').css({'top' : topBnH+'px'});
+        topBn.addClass('on');
     }
     
     //scroll
@@ -106,11 +109,12 @@ function scrollMenu(scltop, hd){
         $.each(section, function(idx, item){
             var target = section.eq(idx);
             var targetTop = target.offset().top;
+            var plusH = hdH+topBnH+1;
 
-            if ( scltop < visualH ) {
+            if ( scltop < (visualH-topBnH) ) {
                 menu.removeClass('on'); 
             }
-            if ( (targetTop-hdH) <= scltop ) {
+            if ( (targetTop-plusH) <= scltop ) {
                 menu.removeClass('on');
                 $('.header .menu li.itme-'+(idx)).addClass('on');
             }

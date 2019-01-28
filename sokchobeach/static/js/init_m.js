@@ -33,20 +33,23 @@ function sliderFn() {
 function tbnheaderFn() {
     $(document).ready(function(){
         var hd = $('header');
-        var tbnH = $('.topbn-wrap').height();
+        var tbn = $('.topbn-wrap');
+        var tbnH = tbn.height();
         //console.log(tbnH, 'a')
 
-        hd.find('.wrap').css({'position' : 'relative'});
+        hd.css({'padding-top' : tbnH +'px'}).find('.wrap').css({'position' : 'relative'});
 
         $(window).scroll(function(){
             var num = $(this).scrollTop();
 
 
              if( num > (tbnH-1) ){
-                 hd.css({'position' : 'fixed', 'padding-top' : 0 +'px'})
+                 hd.css({'position' : 'fixed'})
+                 tbn.css({'position' : 'fixed'});
              }else{
                 //console.log(tbnH)
-                 hd.css({'position' : 'absolute', 'padding-top' : tbnH +'px'})
+                 hd.css({'position' : 'absolute'})
+                 tbn.css({'position' : 'relative'});
              }
         });
     });

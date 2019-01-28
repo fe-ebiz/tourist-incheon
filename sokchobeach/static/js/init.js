@@ -45,15 +45,20 @@ function sliderFn() {
 /* 상단띠배너 존재 시 헤더 */
 function tbnheaderFn() {
 	var hd = $('header');
-	var tbnH = $('.topbn-wrap').height();
+	var tbn = $('.topbn-wrap');
+	var tbnH = tbn.height();
+    
+    hd.css({'padding-top' : tbnH +'px'});
     
     $(window).scroll(function(){
         var num = $(this).scrollTop();
         
          if( num > (tbnH-1) ){
-             hd.css({'position' : 'fixed', 'padding-top' : 0 +'px'})
+             hd.css({'position' : 'fixed'});
+             tbn.css({'position' : 'fixed'});
          }else{
-             hd.css({'position' : 'absolute', 'padding-top' : tbnH +'px'})
+             hd.css({'position' : 'absolute'});
+             tbn.css({'position' : 'absolute'});
          }
     });
 }

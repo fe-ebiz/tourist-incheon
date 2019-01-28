@@ -30,21 +30,24 @@ function scrollFn() {
 //		console.log(setTop);
 		
 		if (scr < setTop) {
-			$('.header').removeClass('fixed');
+			$('.header').removeClass('fixed').find('.wrap').css({'top' : 0+'px'});
+			$('.topbn-wrap').removeClass('fixed');
 		}
 		if (scr >= setTop) {
-			$('.header').addClass('fixed');
+			$('.header').addClass('fixed').find('.wrap').css({'top' : topbnHt+'px'});;
+			$('.topbn-wrap').addClass('fixed');
 		}
 	});
 }
 
 function headerFn() {
-	var	hdHt = $('.header').height();
+	var	hdHt = $('.header').height(),
+        topbnHt = $('.topbn-wrap').height();
 	
 	$('.header .gnb .menu a').bind('click', function(event) {
         var $_anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: $($_anchor.attr('href')).offset().top - hdHt
+            scrollTop: $($_anchor.attr('href')).offset().top - (hdHt+topbnHt)
         });
         event.preventDefault();
     });

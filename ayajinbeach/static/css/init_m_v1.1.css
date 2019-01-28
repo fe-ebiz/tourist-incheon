@@ -28,6 +28,7 @@ label {cursor: pointer;}
 .topbn-wrap {position: relative !important;}
 .topbn-wrap + .header {padding-top: 0 !important;}
 /*.topbn-wrap .slide-banner li {padding-top: 13% !important;}*/
+.topbn-wrap.fixed {position: fixed !important;}
 
 /*공통스타일*/
 .contents {position: relative;}
