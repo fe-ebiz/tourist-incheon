@@ -60,7 +60,7 @@ function menuFn(topBnH){
                 var target = $(this).attr('href');
                 var offsetTop;
 
-                if( target == '/' ){
+                if(  target == '#top' || target == '/' ){
                     $('html, body').stop().animate({
                         scrollTop : 0
                     }, time);
@@ -108,15 +108,18 @@ function scrollMenu(scltop, hd){
     if( $('body').hasClass('Main') ){
         $.each(section, function(idx, item){
             var target = section.eq(idx);
+            var secId = ( '#'+String(target.attr('id')) );
             var targetTop = target.offset().top;
             var plusH = hdH+topBnH+1;
+            
+            //console.log(targetId);
 
             if ( scltop < (visualH-topBnH) ) {
                 menu.removeClass('on'); 
             }
             if ( (targetTop-plusH) <= scltop ) {
                 menu.removeClass('on');
-                $('.header .menu li.itme-'+(idx)).addClass('on');
+                menu.find('a[href="'+secId+'"]').parents('li').addClass('on');
             }
 
         });

@@ -117,6 +117,7 @@ function scrollMenu(scltop, hd){
     if( $('body').hasClass('Main') ){
         $.each(section, function(idx, item){
             var target = section.eq(idx);
+            var secId = ( '#'+String(target.attr('id')) );
             var targetTop = target.offset().top;
             var plusH = hdH+topBnH+1;
 
@@ -125,7 +126,7 @@ function scrollMenu(scltop, hd){
             }
             if ( (targetTop-plusH) <= scltop ) {
                 menu.removeClass('on');
-                $('.header .menu li.itme-'+(idx)).addClass('on');
+                menu.find('a[href="'+secId+'"]').parents('li').addClass('on');
             }
 
         });
