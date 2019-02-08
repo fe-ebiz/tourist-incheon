@@ -69,7 +69,7 @@ function menuFn(topBnH){
                 var target = $(this).attr('href');
                 var offsetTop;
 
-                if( target == '#top' ){
+                if( target == '#top' || target == '/' ){
                     $('html, body').stop().animate({
                         scrollTop : 0
                     }, time);

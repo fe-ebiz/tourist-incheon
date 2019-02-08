@@ -126,7 +126,7 @@ img {max-width: 100%;}
 .Main .about-sec .con-area .img02 {float: left; width: 46%; padding-right: 2.5%;}
 .Main .about-sec .con-area .img03 {float: right; width: 53%;}
 
-/* 주변관광 안내 */
+/* 주변관광 안내 */ 
 .Main .tour-sec {background: #f6f6f6;}
 .Main .tour-sec .area {}
 .Main .tour-sec .area .h4-tit {position: relative; font-size: 15px; margin-top: 5px;}
@@ -135,7 +135,7 @@ img {max-width: 100%;}
 .Main .tour-sec .area .list > li {float: left; width: 48.6%; margin: 5px 0 10px 2.4%; overflow: hidden;}
 .Main .tour-sec .area .list > li figure {border: 1px solid #a9a7a8; box-sizing: border-box;}
 .Main .tour-sec .area .list > li figure img {width: 100%;}
-.Main .tour-sec .area .list > li:nth-child(2n-1) {margin-left: 0;}
+.Main .tour-sec .area .list > li:nth-child(2n-1) {clear: both; flex: left; margin-left: 0;}
 .Main .tour-sec .area .list > .link-tour {cursor:pointer}
 .Main .tour-sec .area .list > li dl {margin-top: 7px; letter-spacing: -0.9px;}
 .Main .tour-sec .area .list > li dl dt {font-size: 12px; color: 0; padding-bottom: 5px; margin-bottom: 7px; border-bottom: 1px solid #c8c8c8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}

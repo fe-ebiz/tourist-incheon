@@ -12,13 +12,13 @@ body {color: #434343;}
 
 /*
   Main
- */ 
+ */
 /* contents */
 
 /* 메인 비주얼 */
-.Main .visual-sec .slide-1:before {background: #eee url(../../img/main/banner_01.jpg) no-repeat center; background-size: cover;}
-.Main .visual-sec .slide-2:before {background: #eee url(../../img/main/banner_02.jpg)  no-repeat center; background-size: cover;}
-.Main .visual-sec .visual-txt {padding-top: 25px;}
+.Main .visual-sec .slide-1:before {background: #eee url(http://img.chungchoho.co.kr/main/banner_01.jpg) no-repeat center; background-size: cover;}
+.Main .visual-sec .slide-2:before {background: #eee url(http://img.chungchoho.co.kr/main/banner_02.jpg)  no-repeat center; background-size: cover;}
+.Main .visual-sec .visual-txt {/*padding-top: 25px;*/}
 .Main .visual-sec .visual-txt h2 {margin: 0px auto 2px; font-size: 31px; line-height: 36px;}
 .Main .visual-sec .visual-txt h2 span {display: block;}
 .Main .visual-sec .visual-txt .p-2 {font-weight: 400; background: #000;}
@@ -40,13 +40,13 @@ body {color: #434343;}
   Event
  */
 /* 비주얼영역 */
-.Event .subVisual.type-2 {background: url(../../img/m/event/bg_sub_top.jpg) no-repeat center center; background-size: cover;}
+.Event .subVisual.type-2 {background: url(http://img.chungchoho.co.kr/m/event/bg_sub_top.jpg) no-repeat center center; background-size: cover;}
 
 /*
   Board
  */
 /* 비주얼영역 */
-.Board .subVisual.type-2 {padding: 70px 0 80px; background: url(../../img/m/board/bg_sub_top.jpg) no-repeat center center; background-size: cover;}
+.Board .subVisual.type-2 {padding: 70px 0 80px; background: url(http://img.chungchoho.co.kr/m/board/bg_sub_top.jpg) no-repeat center center; background-size: cover;}
 
 .Board .con-sec {padding: 25px 15px 22px;}
 /* search */
