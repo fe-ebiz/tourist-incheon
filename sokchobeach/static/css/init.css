@@ -9,7 +9,7 @@
 .header .wrap .area {padding-top: 42px;}
 
 /*메인비쥬얼*/
-.contents {padding-top: 77px;}
+.contents {/*padding-top: 77px;*/}
 .contents .main {position: relative; /*overflow: hidden;*/}
 .contents .main .slide-container {}
 .contents .main .slide {/*padding-top: 427px;*/ box-sizing: border-box; color: #fff; height: 100%; /*height: 1088px;*/ box-sizing: border-box;}
