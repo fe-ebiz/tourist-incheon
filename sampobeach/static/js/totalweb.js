@@ -15,7 +15,7 @@ $(function() {
             rwTop = 30;
         }
 
-        $('.header, .contents').css({'min-width' : allWd +'px'})
+        $('.header, .footer, .contents').css({'min-width' : allWd +'px'})
         $('.rWing-2').css({'width' : allWd +'px'})
         rwBox.css({'top' : rwTop+'px'})
 
