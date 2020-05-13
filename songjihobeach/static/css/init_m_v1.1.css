@@ -129,14 +129,18 @@ img {max-width: 100%;}
 /* 주변관광 안내 */ 
 .Main .tour-sec {background: #f6f6f6;}
 .Main .tour-sec .area {}
-.Main .tour-sec .area .h4-tit {position: relative; font-size: 15px; margin-top: 5px;}
+.Main .tour-sec .area .h4-tit {position: relative; font-size: 15px; margin-top: 15px; margin-top: 5px;}
 .Main .tour-sec .area .h4-tit:before {content: ""; display: inline-block; width: 5px; height: 14px; background: #c0c0c0; vertical-align: middle; margin-right: 4px;}
 .Main .tour-sec .tourist-box .area:first-child .h4-tit {margin-top: 10px;}
-.Main .tour-sec .area .list > li {float: left; width: 48.6%; margin: 5px 0 10px 2.4%; overflow: hidden;}
+/* .Main .tour-sec .area .list > li {float: left; width: 48.6%; margin: 5px 0 10px 2.4%; overflow: hidden;}
+.Main .tour-sec .area .list > li:nth-child(2n-1) {clear: both; flex: left; margin-left: 0;} */
+.Main .tour-sec .area .list {display: flex; flex-wrap: wrap; margin-top: -10px;}
+.Main .tour-sec .area .list + .list {margin-top: 0px;}
+.Main .tour-sec .area .list > li {width: 49%; margin-left: 2%; margin-top: 10px;}
+.Main .tour-sec .area .list > li:nth-child(2n - 1) {margin-left: 0;}
+.Main .tour-sec .area .list > .link-tour {cursor:pointer}
 .Main .tour-sec .area .list > li figure {border: 1px solid #a9a7a8; box-sizing: border-box;}
 .Main .tour-sec .area .list > li figure img {width: 100%;}
-.Main .tour-sec .area .list > li:nth-child(2n-1) {clear: both; flex: left; margin-left: 0;}
-.Main .tour-sec .area .list > .link-tour {cursor:pointer}
 .Main .tour-sec .area .list > li dl {margin-top: 7px; letter-spacing: -0.9px;}
 .Main .tour-sec .area .list > li dl dt {font-size: 12px; color: 0; padding-bottom: 5px; margin-bottom: 7px; border-bottom: 1px solid #c8c8c8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .Main .tour-sec .area .list > li dl dt h5 {margin-bottom: 4px; font-size: 14px; color: #008ead; font-weight: 700;}

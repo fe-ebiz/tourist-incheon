@@ -98,8 +98,12 @@
 .contents .tourist .area .h3-tit > * {vertical-align: middle;}
 .contents .tourist .area .h3-tit .sampo {text-transform: uppercase; font-size: 16px; display: inline-block; text-indent: 2px; margin-bottom: 4px;}
 .contents .tourist .area .h3-tit:before {content: ""; display: inline-block; width: 10px; height: 25px; background: #c0c0c0; vertical-align: middle; margin-right: 10px;}
-.contents .tourist .area .list > li {float: left; width: 280px; margin-left: 20px; overflow: hidden;}
-.contents .tourist .area .list > li:first-child {margin-left: 0;}
+/* .contents .tourist .area .list > li {float: left; width: 280px; margin-left: 20px; overflow: hidden;}
+.contents .tourist .area .list > li:first-child {margin-left: 0;} */
+.contents .tourist .area .list {display: flex; flex-wrap: wrap; margin-top: -20px;}
+.contents .tourist .area .list + .list {margin-top: 0px;}
+.contents .tourist .area .list > li {width: 280px; margin-left: 20px; margin-top: 20px;}
+.contents .tourist .area .list > li:nth-child(4n - 3) {margin-left: 0;}
 .contents .tourist .area .list > .link-tour {cursor:pointer}
 .contents .tourist .area .list > li .tour-img {border: 1px solid #a19e9f; width: 280px; height: 160px; box-sizing: border-box;}
 .contents .tourist .area .list > li dl {margin-top: 15px; letter-spacing: -0.9px;}

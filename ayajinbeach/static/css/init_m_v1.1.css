@@ -214,9 +214,13 @@ label {cursor: pointer;}
 .contents .tour .tourist .area .h3-tit > * {vertical-align: middle;}
 .contents .tour .tourist .area .h3-tit .sampo {text-transform: uppercase; font-size: 16px; display: inline-block; text-indent: 2px; margin-bottom: 4px;}
 .contents .tour .tourist .area .h3-tit:before {content: ""; display: inline-block; width: 6px; height: 16px; background: #c0c0c0; vertical-align: middle; margin-right: 5px;}
-.contents .tour .tourist .area .list + .list {margin-top: 10px;}
+/* .contents .tour .tourist .area .list + .list {margin-top: 10px;}
 .contents .tour .tourist .area .list > li {float: left; width: 49%; margin-left: 2%; overflow: hidden;}
-.contents .tour .tourist .area .list > li:nth-child(2n+1) {margin-left: 0;}
+.contents .tour .tourist .area .list > li:nth-child(2n+1) {margin-left: 0;} */
+.contents .tourist .area .list {display: flex; flex-wrap: wrap; margin-top: -10px;}
+.contents .tourist .area .list + .list {margin-top: 0px;}
+.contents .tourist .area .list > li {width: 49%; margin-left: 2%; margin-top: 10px;}
+.contents .tourist .area .list > li:nth-child(2n - 1) {margin-left: 0;}
 .contents .tour .tourist .area .list > .link-tour {cursor:pointer}
 .contents .tour .tourist .area .list > li .tour-img {border: 1px solid #a19e9f;  box-sizing: border-box;}
 .contents .tour .tourist .area .list > li .tour-img img {width: 100%;}
