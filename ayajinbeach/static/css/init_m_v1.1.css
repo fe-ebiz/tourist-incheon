@@ -217,7 +217,9 @@ label {cursor: pointer;}
 /* .contents .tour .tourist .area .list + .list {margin-top: 10px;}
 .contents .tour .tourist .area .list > li {float: left; width: 49%; margin-left: 2%; overflow: hidden;}
 .contents .tour .tourist .area .list > li:nth-child(2n+1) {margin-left: 0;} */
-.contents .tourist .area .list {display: flex; flex-wrap: wrap; margin-top: -10px;}
+
+/*리스트 관련*/
+/* .contents .tourist .area .list {display: flex; flex-wrap: wrap; margin-top: -10px;}
 .contents .tourist .area .list + .list {margin-top: 0px;}
 .contents .tourist .area .list > li {width: 49%; margin-left: 2%; margin-top: 10px;}
 .contents .tourist .area .list > li:nth-child(2n - 1) {margin-left: 0;}
@@ -227,7 +229,7 @@ label {cursor: pointer;}
 .contents .tour .tourist .area .list > li dl {margin-top: 5px; letter-spacing: -0.9px; word-break: keep-all;}
 .contents .tour .tourist .area .list > li dl dt {font-size: 11.5px; color: 0; padding-bottom: 5px; margin-bottom: 5px; border-bottom: 1px solid #c8c8c8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .contents .tour .tourist .area .list > li dl dt h4 {font-size: 14px; color: #008ead; font-weight: 700; margin-bottom: 2px;}
-.contents .tour .tourist .area .list > li dl dd {font-size: 13px; color: #4c4c4c; line-height: 1.5;}
+.contents .tour .tourist .area .list > li dl dd {font-size: 13px; color: #4c4c4c; line-height: 1.5;} */
 
 
 /*오시는길*/
@@ -374,3 +376,68 @@ label {cursor: pointer;}
 .contents .board-memory .tb-write .tr-secure .w-1 {margin: 0 2px; padding-left: 5px; width: 70px;}
 .contents .board-memory .tb-write .tr-secure .s-1 {/*display: block;*/ font-size: 11px; letter-spacing: -0.7px;}
 .contents .board-memory .row-cause {text-align: center; margin-top: 25px; font-size: 12px; word-break: keep-all; letter-spacing: -0.9px;}
+
+
+
+/*리스트 컨트롤*/
+.contents .tourist .area .list {
+	display:flex;
+	flex-wrap:wrap;
+  	margin-top:-10px;
+  	justify-content: space-between;
+}
+
+.contents .tourist .area .cf::after{
+  display: none;
+}
+
+.contents .tourist .area .cf::before{
+  display: none;
+}
+
+.contents .tourist .area .list + .list {
+	margin-top:0px;
+}
+.contents .tourist .area .list > li {
+	width:49%;
+	/* margin-left:2%; */
+	margin-top:10px;
+}
+.contents .tourist .area .list > li:nth-child(2n - 1) {
+	margin-left:0;
+}
+.contents .tour .tourist .area .list > .link-tour {
+	cursor:pointer}
+.contents .tour .tourist .area .list > li .tour-img {
+	border:1px solid #a19e9f;
+	box-sizing:border-box;
+}
+.contents .tour .tourist .area .list > li .tour-img img {
+	width:100%;
+}
+.contents .tour .tourist .area .list > li dl {
+	margin-top:5px;
+	letter-spacing:-0.9px;
+	word-break:keep-all;
+}
+.contents .tour .tourist .area .list > li dl dt {
+	font-size:11.5px;
+	color:0;
+	padding-bottom:5px;
+	margin-bottom:5px;
+	border-bottom:1px solid #c8c8c8;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.contents .tour .tourist .area .list > li dl dt h4 {
+	font-size:14px;
+	color:#008ead;
+	font-weight:700;
+	margin-bottom:2px;
+}
+.contents .tour .tourist .area .list > li dl dd {
+	font-size:13px;
+	color:#4c4c4c;
+	line-height:1.5;
+}

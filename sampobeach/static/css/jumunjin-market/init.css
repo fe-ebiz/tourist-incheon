@@ -1,4 +1,8 @@
 @charset "utf-8";
 
-.contents .main .slide-1:before {background: #eee url(http://design.ebiznetworks.co.kr/joon/beach/img/jumunjin-market.co.kr/mv_1.jpg) no-repeat center;}
-.contents .main .slide-2:before {background: #eee url(http://design.ebiznetworks.co.kr/joon/beach/img/jumunjin-market.co.kr/mv_2.jpg) no-repeat center;}
+.contents .main .slide-1:before {background: #eee url(http://img.jumunjin-market.co.kr/mv_1.jpg) no-repeat center;}
+.contents .main .slide-2:before {background: #eee url(http://img.jumunjin-market.co.kr/mv_2.jpg) no-repeat center;}
+
+/* 
+.contents .main .slide-1:before {background: #eee url(http://img.sampobeach.co.kr/mv_1.jpg) no-repeat center;}
+.contents .main .slide-2:before {background: #eee url(http://img.sampobeach.co.kr/mv_2.jpg) no-repeat center;} */

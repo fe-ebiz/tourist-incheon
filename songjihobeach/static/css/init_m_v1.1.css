@@ -134,9 +134,9 @@ img {max-width: 100%;}
 .Main .tour-sec .tourist-box .area:first-child .h4-tit {margin-top: 10px;}
 /* .Main .tour-sec .area .list > li {float: left; width: 48.6%; margin: 5px 0 10px 2.4%; overflow: hidden;}
 .Main .tour-sec .area .list > li:nth-child(2n-1) {clear: both; flex: left; margin-left: 0;} */
-.Main .tour-sec .area .list {display: flex; flex-wrap: wrap; margin-top: -10px;}
+/* .Main .tour-sec .area .list {display: flex; flex-wrap: wrap; margin-top: -10px;}
 .Main .tour-sec .area .list + .list {margin-top: 0px;}
-.Main .tour-sec .area .list > li {width: 49%; margin-left: 2%; margin-top: 10px;}
+.Main .tour-sec .area .list > li {width: 49%; margin-left: 2%; margin-top: 10px;} */
 .Main .tour-sec .area .list > li:nth-child(2n - 1) {margin-left: 0;}
 .Main .tour-sec .area .list > .link-tour {cursor:pointer}
 .Main .tour-sec .area .list > li figure {border: 1px solid #a9a7a8; box-sizing: border-box;}
@@ -369,4 +369,31 @@ img {max-width: 100%;}
     /* 게시판 write */
     .Board .board-area .tb-write .w-2 {width: 96px;}
     .Board .board-area .tb-write .tr-secure .s-1 {font-size: 10px;}
+}
+
+
+
+/*리스트 콘트롤*/
+.Main .tour-sec .area .list {
+	display:flex;
+	flex-wrap:wrap;
+  margin-top:-10px;
+  justify-content: space-between;
+}
+
+.Main .tour-sec .area .cf::after{
+  display: none;
+}
+
+.Main .tour-sec.area .cf::before{
+  display: none;
+}
+
+.Main .tour-sec .area .list + .list {
+	margin-top:0px;
+}
+.Main .tour-sec .area .list > li {
+	width:49%;
+	/* margin-left:2%; */
+	margin-top:10px;
 }
