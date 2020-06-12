@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/*-bxSlider 재정의-*/
+.bx-wrapper,
+.bx-wrapper .bx-viewport {position: relative; margin: 0 auto; border: none; box-shadow: none; background: none;}
+.bx-controls {display: none;}
+
+/* 1810110  */
+.topbn-wrap {z-index: 99999; position: absolute; width: 100%; /*height: 77px;*/ margin: 0 auto; top: 0; text-align: center;}
+.topbn-wrap + .header {/*margin-top: 77px;*/ padding-top: 77px;}
+.topbn-wrap .slide-banner {position: relative; width: 100%; height: 100%; margin: 0 auto;}
+.topbn-wrap .slide-banner li {position: relative; width: 100%;}
+.topbn-wrap .slide-banner .bn-list-1 {}
+.topbn-wrap .slide-banner .bn-list-2 {}
+.topbn-wrap .slide-banner li .bn-link {display: block; width: 100%; min-width: 1180px; height: 77px;}
+.topbn-wrap .slide-banner .bn-goco .bn-link {background: url(http://img.sampobeach.co.kr/tbn_goco.jpg) repeat-x center center;}
+.topbn-wrap .slide-banner .bn-ocean .bn-link {background: url(http://img.sampobeach.co.kr/tbn_ocean.jpg) repeat-x center center;}
+.topbn-wrap .slide-banner .bn-ramada .bn-link {background: url(http://img.sampobeach.co.kr/tbn_ramada.jpg) no-repeat center center; background-size: cover;}
+.topbn-wrap .slide-banner .bn-sea .bn-link {background: url(http://img.sampobeach.co.kr/tbn_seacruise.jpg) no-repeat center center; background-size: cover;}
+
+/* 181108 서브페이지 고코투어, 오션투유 링크배너 추가 - 삭제예정 */
+.rWing {z-index: 9998; position: fixed; top: 130px; right: 145px;}
+.rWing a {position: relative; display: block; /*width: 169px;*/}
+.rWing a + a {margin-top: 7px;}
+.rWing a img {display: block; width: 100%;}
+/* 190306 배너 변경 */
+.rWing-2 {z-index: 9998; position: relative; width: 1180px; margin: 0 auto;}
+.rWing-2 .rw-box {position:absolute; right: 0;}
+.rWing-2 a {position: relative; display: block; /*width: 169px;*/}
+.rWing-2 a + a {margin-top: 7px;}
+.rWing-2 a img {display: block; width: 100%;}
+
+/* 미세먼지 추가 */
+.weather .area .s-4 {font-size: 16px !important; font-weight: 700; padding-left: 3px;}
+.weather .area .s-4 > * {vertical-align: middle;}
+.weather .area .s-4 img {position: relative !important; float: none !important;}
+
+/* 관광지 타이틀 */
+.contents .tourist .tourist-title {position: relative;font-size: 26px; margin: 0px 0 45px; padding-left: 22px; letter-spacing: -0.9px;}
+.contents .tourist .tourist-title:before {content: ""; position: absolute; left: 0; display: inline-block; width: 7px; height: 73px; background: #c0c0c0; vertical-align: middle; margin-right: 10px;}
+.contents .tourist .tourist-title [class*=row-] {display: block;}
+.contents .tourist .tourist-title .row-1 {line-height: 1;}
+.contents .tourist .tourist-title .row-2 {font-size: 40px; margin-top: 2px;}
+.contents .tourist .tourist-title .sampo {text-transform: uppercase; font-size: 16px; display: inline-block; text-indent: 2px; margin-left: 3px;}

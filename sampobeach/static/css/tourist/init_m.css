@@ -40,16 +40,16 @@
 .contents .tourist .area .list {
 	display:flex;
 	flex-wrap:wrap;
-  margin-top:-10px;
-  justify-content: space-between;
+    margin-top:-10px;
+    justify-content: space-between;
 }
 
 .contents .tourist .area .cf::after{
-  display: none;
+  display: none !important;
 }
 
 .contents .tourist .area .cf::before{
-  display: none;
+  display: none !important;
 }
 
 .contents .tourist .area .list + .list {

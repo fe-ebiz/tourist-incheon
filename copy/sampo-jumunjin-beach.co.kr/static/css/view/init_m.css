@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+
+/*서브비쥬얼*/
+.contents .subVisual {background: #eee url(http://img.sampobeach.co.kr/m/view/subVisual.jpg) no-repeat center / cover;}
+
+/*공통스타일*/
+.contents .wrap.cmStyle {padding: 17px 0 20px;}
+.contents .wrap.cmStyle + .wrap.cmStyle {padding-top: 0;}
+.contents .wrap.cmStyle .tit {text-align: center;}
+.contents .wrap.cmStyle .tit .sokcho {text-transform: uppercase; font-size: 12px; display: inline-block; text-indent: 2px; margin-bottom: 2px; background: #fff; border: 1px solid #61a0c8; padding: 5px 4px 3px; line-height: 1;}
+.contents .wrap.cmStyle .tit .sokcho-2 {font-size: 12px; text-transform: uppercase;}
+.contents .wrap.cmStyle .tit .big {display: block; letter-spacing: -1px; margin-top: 5px; font-size: 18px;}
+
+/*속초8경*/
+.contents .view {}
+.contents .view .h3-tit {position: relative; font-size: 12px; margin: 0px 0 0px; padding-left: 10px; letter-spacing: -0.9px;}
+.contents .view .h3-tit [class*=row-] {display: block;}
+.contents .view .h3-tit .row-1 {line-height: 1;}
+.contents .view .h3-tit .row-2 {font-size: 18px; margin-top: 2px;}
+.contents .view .h3-tit .sampo {text-transform: uppercase; font-size: 11px; display: inline-block; text-indent: 2px; margin-left: 3px;}
+.contents .view .h3-tit:before {content: ""; position: absolute; left: 0; top: -1px; display: inline-block; width: 4px; height: 35px; background: #c0c0c0; vertical-align: middle; margin-right: 10px;}
+.contents .view .p-1 {font-size: 13px; margin: 5px 0 12px; word-break: keep-all; padding-left: 10px;} 
+.contents .view .p-1 .block {display: block;}
+.contents .view .view-map img {border: 1px solid #d7d7d7; box-sizing: border-box; border-radius: 10px; overflow: hidden;}
+.contents .view-2 .view-map img {border: none;}
+.contents .view .view-map img {width: 100%;}
+.contents .view .area {}
+.contents .view .area .list {margin-top: 15px;}
+.contents .view .area .list + .list {margin-top: 0px;}
+.contents .view .area .list > li {float: left; width: 48.6%; overflow: hidden;}
+.contents .view .area .list > li:nth-child(2n) {margin-left: 1.2%;}
+.contents .view .area .list > li:nth-child(2n-1) {margin-right: 1.2%;}
+.contents .view.addType .area .list > li {margin-bottom: 10px;}
+/*.contents .view .area .list > .link-tour {cursor:pointer}*/
+.contents .view .area .list > li .tour-img {box-sizing: border-box; text-align: center;}
+.contents .view .area .list > li dl {margin-top: 8px; letter-spacing: -0.9px;}
+.contents .view .area .list > li dl dt {color: 0; padding-bottom: 5px; margin-bottom: 0px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.contents .view .area .list > li dl dt h4 {font-size: 14px; font-weight: 700; color: #000; text-align: center; padding-top: 1px;}
+.contents .view .area .list > li dl dt h4 .num {position: relative; top: -1px;background: #1d5e87; color: #fff; display: inline-block; width: 18px; height: 18px; border-radius: 50%; line-height: 1.6; vertical-align: middle; font-weight: 400; font-size: 13px;}
+.contents .view:not(.addType) .area .list > li dl dd {font-size: 11.5px; color: #4c4c4c; line-height: 1.4; padding: 0 0px; height: 60px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; letter-spacing: -1px; word-break: keep-all;}
+.contents .view.addType .area .list > li dl dd {font-size: 11.5px; color: #4c4c4c; line-height: 1.4; padding: 0 0px; letter-spacing: -1px; word-break: keep-all;}
+.contents .view .row-btn {text-align: center;}
+.contents .view .row-btn .btn-more {display: inline-block; padding: 4px 9px; border-radius: 15px; font-size: 12.5px; background: #fff; border: 1px solid #4286b0; color: #165e88; }
+
+.contents .view .view-map .info {font-size: 13px; margin: 10px 0 12px; word-break: keep-all; text-align: center;} 

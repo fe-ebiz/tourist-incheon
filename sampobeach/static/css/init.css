@@ -48,6 +48,17 @@
 .contents .main .book-area .book-txt-box .p-1 {}
 .contents .main .book-area .book-txt-box .p-2 {margin-top: 1px;}
 
+/* 20200616 tvN 예능 */
+.contents .main .broadcast-area {position: absolute; width: 1180px; bottom: 200px; left: 50%; margin-left: -590px;}
+.contents .main .broadcast-area .img-broadcast {float: left; display: block; position: relative;}
+.contents .main .broadcast-area .img-broadcast img {width: 151px;}
+.contents .main .broadcast-area .broadcast-txt-box {float: left; display: block; position: relative; margin-left: 16px;}
+.contents .main .broadcast-area .broadcast-txt-box p {font-size: 18px; letter-spacing: -0.7px; line-height: 26px; color: #fff; padding-top: 10px;}
+.contents .main .broadcast-area .broadcast-txt-box p em { font-weight: 600; color: #fff76f;}
+.contents .main .broadcast-area .broadcast-txt-box .p-1 {}
+.contents .main .broadcast-area .broadcast-txt-box .p-2 {margin-top: 1px;}
+
+
 /*공통스타일*/
 .contents .wrap.cmStyle {padding: 50px 0;}
 .contents .wrap.cmStyle .tit {font-size: 34px;}
