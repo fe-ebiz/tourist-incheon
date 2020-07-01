@@ -1,0 +1,72 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+
+body {font-family: 'Nanum Square', 'NanumSquare', 'Nanum Gothic', 'Malgun Gothic', sans-serif; line-height:1.3; letter-spacing: -0.3px; color: #434343;}
+/*body {font-family: 'NanumSquare', 'Nanum Square', 'Nanum Gothic', 'Malgun Gothic', sans-serif; line-height:1.3; letter-spacing: -0.3px; color: #434343;}*/
+img {max-width: 100%;}
+a {color: inherit;}
+label {cursor: pointer;}
+
+/*-bxSlider 재정의-*/
+.bx-wrapper,
+.bx-wrapper .bx-viewport {position: relative; margin: 0 auto; border: none; box-shadow: none; background: none;}
+.bx-controls {display: none;}
+/*
+.bx-wrapper .bx-controls-direction {position: absolute; width: 100%; width: 100%; left: 0; top: 50%; margin-top: -22.5px;}
+.bx-wrapper .bx-controls-direction a {display: block;}
+.bx-wrapper .bx-controls-direction a {background: none; width: 45px; height: 45px; top: 0; margin-top: 0; z-index: 1;}
+.bx-wrapper .bx-prev {left: 20px;}
+.bx-wrapper .bx-next {right: 20px;}
+.bx-wrapper .bx-controls-direction,
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto,
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {display: none;}
+*/
+
+/*공통스타일*/
+.contents {position: relative;}
+.container:before, .container:after {content: ""; display: table;}
+.container:after {clear: both;}
+.container {position: relative; width: 1180px; margin: 0 auto;}
+.f-bd {font-weight: 700;}
+.f-bdr {font-weight: 800;}
+.appe-reset {font-family: "Nanum Square", sans-serif;}
+.wrap {box-sizing: border-box;}
+.area {position: relative;}
+input[type=password] {font-family: "Nanum Gothic", sans-serif;}
+
+.txt-upper {text-transform: uppercase;}
+
+/*공통 서브비쥬얼*/
+.contents .subVisual {padding-top: 140px; box-sizing: border-box; color: #fff; height: 318px; background: #eee url(http://img.sampobeach.co.kr/event/subVisual.jpg) no-repeat center;}
+.contents .subVisual .mainTxt {text-align: right;}
+.contents .subVisual .mainTxt > * {text-shadow: 3px 3px 2px rgba(0,0,0, .25); letter-spacing: -0.7px;}
+.contents .subVisual .mainTxt .p-1 {font-size: 22px;font-weight: 700;}
+.contents .subVisual .mainTxt h2 {font-size: 54px; margin-top: 5px; letter-spacing: -2px; line-height: 1.2;}
+.contents .subVisual .mainTxt .p-2 {font-size: 16px; margin-top: 5px;}
+
+/*해더영역*/
+.header {position: absolute; top: 0; left: 0; width: 100%; z-index: 99;}
+.header .wrap {padding-top: 35px;}
+.header .wrap .logo {float: left;}
+
+.wrapper .wrap .gnb {position: relative; float: right; top: 15px;}
+.wrapper .wrap .menu > li {position: relative; float: left;} 
+.wrapper .wrap .menu > li:before {content: ""; display: block; position: absolute; left: 0; top: 0; width: 2px; height: 60%; top: 18%; background: #fff;}
+.wrapper .wrap .menu > li:first-child:before {display: none;}
+.wrapper .wrap .menu > li > a {display: block;  padding: 0 12px; color: #fff; font-size: 18px;}
+.wrapper .wrap .menu > li:first-child > a {padding-left: 0;}
+.wrapper .wrap .menu > li:last-child > a {padding-right: 0;}
+
+/*푸터영역*/
+.footer {position: relative; background: #576480; padding: 35px 0 50px;}
+.footer .wrap .logo, .footer .wrap address {float: left;}
+.footer .wrap .logo {width: 150px; margin-right: 20px;}
+.footer .wrap address {width: 530px; color: #fff; font-size: 15px; line-height: 1.6;}
+.footer .wrap address small {text-transform: uppercase;}
+
+.wrapper .footer .wrap .gnb {position: relative; float: right; margin-top: -13px;}
+.wrapper .footer .wrap .menu > li > a {font-size: 13px; padding: 0 5px;}
+.wrapper .footer .wrap .menu > li:before {width: 1px;}
+.wrapper .footer .wrap .menu > li:last-child > a {padding-right: 0;}

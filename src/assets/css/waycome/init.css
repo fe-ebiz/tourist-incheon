@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+
+/*컬러*/
+.c-blue {color: #008aff;}
+
+/*서브비쥬얼*/
+.contents .subVisual {background: #eee url(http://img.sampobeach.co.kr/waycome/subVisual.jpg) no-repeat center;}
+
+/*오시는길*/
+.contents .waycome {background: #f5f5f5; padding: 55px 0 70px;}
+.contents .waycome [class*=way-] {position: relative;}
+.contents .waycome .way-info {}
+.contents .waycome .way-info .p-1 {position: relative; margin-top: 30px; font-size: 26px; font-weight: 700; margin-bottom: 3px;}
+.contents .waycome .way-info .p-1:before {content: ""; display: inline-block; width: 10px; height: 25px; background: #c0c0c0; vertical-align: middle; margin-right: 10px; margin-top: -1px;}
+.contents .waycome .way-info .p-1:first-child {margin-top: 0;}
+.contents .waycome .way-info dl {font-size: 20px; line-height: 1.6;}
+.contents .waycome .way-info dt, .contents .waycome .way-info dd {padding-left: 20px;}
+.contents .waycome .way-info dt {font-weight: 700; margin-top: 18px;}
+.contents .waycome .way-info dd {}
+.contents .waycome .way-info dd p.dot {position: relative;padding-left: 12px;}
+.contents .waycome .way-info dd p.dot:before {content: "-"; display: inline-block; position: absolute; left: 0;}
+.contents .waycome .way-info .row-btn {margin-top: 35px; padding-left: 10px;}
+.contents .waycome .way-info .row-btn a:first-child {margin-right: 10px;}
+.contents .waycome .way-info {float: left;}
+.contents .waycome .way-map {float: right;}

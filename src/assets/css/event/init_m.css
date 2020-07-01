@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+
+/*공통스타일*/
+.contents .wrap.cmStyle {padding: 17px 0 20px;}
+
+/*서브비쥬얼*/
+.contents .subVisual {background: #eee url(http://img.sampobeach.co.kr/m/event/subVisual.jpg) no-repeat center 60% /cover;}
+
+/*이벤트*/
+.contents .event:nth-child(2n-1) {background: #f1f1f1;}
+.ie8 .contents .evt-2, .ie8 .contents .evt-4 {background: #f1f1f1;}
+
+.contents .event .area {}
+.contents .event .area .h3-tit {font-size: 14px; color: #5a5a5a; font-weight: 700; padding-bottom: 5px; word-break: keep-all; text-align: center;}
+.contents .event .area .evt-img {position: relative;}
+.contents .event .area .evt-img img {display: block; width: 100%; box-sizing: border-box; border: 1px solid #b0ada8;}
+.contents .event .area .evt-img iframe {width: 100%; height: 174px; margin-top: 10px;}
+.contents .event .area .evt-info {}
+.contents .event .area .evt-info .detail {padding-top: 3px;}
+.contents .event .area .evt-info dl {margin-top: 5px; font-size: 13px; line-height: 1.5;}
+.contents .event .area .evt-info dl:after {content: ""; display: table; clear: both;}
+.contents .event .area .evt-info dt, .contents .event .area .evt-info dd {display: inline-block; vertical-align:top; }
+.contents .event .area .evt-info dt {color: #008ead; font-weight: 700;}
+.contents .event .area .evt-info dd {margin-left: 10px; color: #000;}
+.contents .event .showing {font-size: 13px; color: #4c4c4c; margin-top: 10px; padding-top: 10px; word-break:keep-all; border-top: 1px solid #d2d2d2; line-height: 1.5;}
+.contents .event .area .h3-tit,
+.contents .event .area .evt-info dd,
+.contents .event .showing {letter-spacing: -0.9px; word-break: keep-all;}

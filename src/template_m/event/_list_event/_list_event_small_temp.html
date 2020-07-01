@@ -1,0 +1,33 @@
+@@for (var i = 0; i < 2; i++) {
+                <div class="area cf">
+                <figure class="evt-img">
+                    <img src="`+ eventlist[i].eventImgPath +`" alt="축제와 이벤트">
+                </figure>
+                <div class="evt-info">
+                    <h3 class="h3-tit">`+ eventlist[i].eventName +`</h3>
+                    <div class="detail">
+                        <dl> 
+                            <dt>기간</dt>
+                            <dd>`+ eventlist[i].period +`</dd>
+                        </dl>
+                        <dl>
+                            <dt>주최</dt>
+                            <dd>`+ eventlist[i].host +`</dd>
+                        </dl>
+                        <dl>
+                            <dt>장소</dt>
+                            <dd>`+ eventlist[i].place +`</dd>
+                        </dl>
+                        <dl>
+                            <dt>비고</dt>
+                            <dd>
+                                <a href="`+ eventlist[i].href +`" target="_blank" title="새창 열림">`+ eventlist[i].remark +`</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="showing">
+                `+ eventlist[i].text +`	
+            </div>
+}

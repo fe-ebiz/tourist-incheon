@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+
+/*공통스타일*/
+.contents .wrap.cmStyle {padding: 20px 10px 30px;}
+
+/*서브비쥬얼*/
+.contents .subVisual {background: #eee url(http://img.sampobeach.co.kr/m/board/subVisual.jpg) no-repeat center 60% /cover;}
+
+/* 게시판 너비 */
+.contents .board .container {position: relative; box-sizing:border-box; width: 100%; margin: 0 auto;} 
+
+/*게시판 list*/
+.contents .board {min-height: 330px;}
+.contents .board .tb-list {position: relative; width: 100%; font-size: 12px; table-layout: fixed;}
+.contents .board .tb-list col.nth-1 {width: 75%;}
+.contents .board .tb-list col.nth-2 {width: 25%;}
+.contents .board .tb-list th, .contents .board .tb-list td {padding: 10px 0px; text-align: center;}
+.contents .board .tb-list td {overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.contents .board .tb-list td:nth-child(1) {text-align: left; padding-left: 5px;}
+.contents .board .tb-list thead tr {background: #f2f2f2; border-top: 1px solid #3c3b3b; border-bottom: 1px solid #d9d9d9;}
+.contents .board .tb-list tbody tr {border-bottom: 1px solid #d9d9d9;}
+.contents .board .pagenation {text-align: center; font-size: 0; margin-top: 20px;}
+.contents .board .pagenation a {display: inline-block; font-size: 12px; width: 24px; height: 24px; vertical-align: middle; line-height: 2em; border: 1px solid #d9d9d9; border-left: 0; color: #d2d2d2; font-family: "Nanum Gothic"; font-weight: 600; }
+.contents .board .pagenation a[class*="prev"], .contents .board .pagenation a[class*="next"] {font-size: 11px; line-height: 2.3em; letter-spacing: -2px;}
+.contents .board .pagenation a:hover, .contents .board .pagenation a.on {background: #d2d2d2; color: #fff;}
+.contents .board .pagenation a.prev, .contents .board .pagenation a.next {background: #d2d2d2; color: #595959;}
+.contents .board .pagenation a.prev {text-indent: -4px; margin-right: 5px;}
+.contents .board .pagenation a.next {text-indent: 1px; margin-left: 5px;}
+
+/*게시판 read*/
+.contents .board .tb-read {width: 100%;}
+.contents .board .tb-read th {padding: 10px 10px; font-size: 12.5px;}
+.contents .board .tb-read td {padding: 10px; font-size: 12.5px; line-height: 1.6; word-break: keep-all;}
+.contents .board .tb-read thead tr {border-top: 1px solid #3c3b3b; border-bottom: 1px solid #d9d9d9; background: #f2f2f2;}
+.contents .board .tb-read tbody tr {border-bottom: 1px solid #d9d9d9;}
+.contents .board .tb-read thead tr th .flt-r {float: right; margin-left: 5px;}
+.contents .board .row-btn {margin-top: 20px; text-align: center;}
+.contents .board .row-btn .btn-list {display: inline-block; font-size: 13px; border: 1px solid #d9d9d9; border-radius: 25px; padding: 5px 30px;}
+
+/*추억 게시판*/
+.contents .subVisual.board-memory {background: #eee url(http://img.sampobeach.co.kr/m/board/subVisual_bm.jpg) no-repeat right top / cover;}
+/*.contents .subVisual.board-memory {background: #eee url(../../../img/m/board/subVisual_bm.jpg) no-repeat right top /cover;}*/
+.contents .board-memory {}
+/*추억 게시판 list*/
+.contents .board-memory .tb-list tr.reply td a {text-indent: 15px;}
+.contents .board-memory .tb-list tr.reply td a .re {position: relative; display: inline-block; font-size: 12px; text-indent: 0; background: #898989; color: #fff; padding: 0 5px;}
+.contents .board-memory .area-1 {}
+.contents .board-memory .area-1 .row-btn {}
+.contents .board-memory .area-1 .row-btn .left {float: left;}
+.contents .board-memory .area-1 .row-btn .right {float: right;}
+.contents .board-memory .area-1 [class*=btn-] {background: #fff; border: 1px solid #b0b0b0; line-height: 1; padding: 7px 14px; border-radius: 30px; font-size: 13px; color: #676767; letter-spacing: -1px; min-width: 68px;}
+.contents .board-memory .area-1 [class*=btn-]:first-child + button {margin-left: 1px;}
+/*.contents .board-memory .area-1 .pagenation + .row-btn .btn-write {position: absolute; right: 0; bottom: 0;}*/
+.contents .board-memory .row-search {text-align: center;}
+.contents .board-memory .row-search {margin-top: 20px;}
+.contents .board-memory .row-search > * {position: relative; display: inline-block; height: 32px; border: 1px solid #c8c8c8; background: #fff; box-sizing: border-box; vertical-align: middle; padding: 0 5px; font-size: 12.5px; line-height: 1; font-family: "Nanum Square", sans-serif; vertical-align: top; border-radius: 2px; color: #383838;}
+.contents .board-memory .row-search .sltDiv {padding: 0; width: 70px; overflow: hidden;}
+.contents .board-memory .row-search .sltDiv:after {content: "▼"; position: absolute; right: 5px; top: 9px; color: #acacac; pointer-events: none;}
+.contents .board-memory .row-search .sltDiv .sltArr {}
+.contents .board-memory .row-search .category {position: absolute; left: 0; top: 0; padding-left: 5px; width: 100%; border: 0; font-size: 13px; height: 100%; width: 150px; color: #383838;}
+.contents .board-memory .row-search .category:focus {width: 100%;}
+.contents .board-memory .row-search .category::-ms-expand{display:none;}
+.ie8 .contents .board-memory .row-search .category,
+.ie9 .contents .board-memory .row-search .category {width: 100%;}
+.ie8 .contents .board-memory .row-search .sltDiv:after,
+.ie9 .contents .board-memory .row-search .sltDiv:after {display: none;}
+.contents .board-memory .row-search .keword {text-align: left; margin: 0 2px; padding-left: 10px; width: 90px;}
+.contents .board-memory .row-search .btn-search {padding: 0 12px; border-radius: 5px; background: #efefef;}
+.contents .board-memory .row-search .btn-write {border-radius: 20px; padding: 0 15px; margin-left: 5px;}
+
+/*추억 게시판 read*/
+.contents .board-memory .tb-list tr.post td {text-align: left; padding: 10px; font-size: 12.5px; line-height: 1.6;}
+.contents .board-memory .tb-list tr.post td img.exImg {display: block; margin: 0 auto;}
+
+/*수정 시 팝업*/
+.popWrapper#pwdWrapper {display: none;}
+.popWrapper,
+.drop-bg {position: fixed; left: 0; top: 0; width: 100%; height: 100%;}
+.drop-bg {background: rgba(0,0,0, 0.58);}
+.popWrapper .pop-password {position: absolute; background: #fff; width: 250px; left: 50%; margin-left: -125px; top: 50%; margin-top: -71px; font-size: 16px; box-sizing: border-box; border: 1px solid #111;}
+.popWrapper .pop-password .pop-header {}
+.popWrapper .pop-password .pop-header h2 {background: #c9c9c9; font-size: 16px; text-align: center; padding: 10px 0;}
+.popWrapper .pop-password .pop-header .btn-x {position: absolute; right: 0; top: 2px;display: inline-block; width: 32px; height: 40px;}
+.popWrapper .pop-password .pop-header .btn-x .a-x {top: 7px; right: 5px;}
+.popWrapper .pop-password .pop-header .btn-x .a-x:before, .popWrapper .pop-password .pop-header .btn-x .a-x:after {width: 17px;}
+.popWrapper .pop-password .pop-body {padding: 20px 20px; text-align: center; font-size: 13px;}
+.popWrapper .pop-password .pop-body .p-1 {text-align: center; letter-spacing: -0.7px;}
+.popWrapper .pop-password .pop-body .row-inp {margin-top: 12px;}
+.popWrapper .pop-password .pop-body .row-inp > * {height: 32px; display: inline-block; box-sizing: border-box; vertical-align: top; border: 1px solid #c9c9c9; font-size: 13px; color: #383838;}
+.popWrapper .pop-password .pop-body .row-inp .pwd {padding: 0 5px; width: 110px;}
+.popWrapper .pop-password .pop-body .row-inp .btn-ok {border-radius: 5px; padding: 0 15px; background: #efefef; min-width: 54px; margin-left: 2px;}
+
+/*게시판 글쓰기*/
+.contents .board-memory .tb-write {width: 100%; border-top: 1px solid #3d3d3d; margin-top: 0px;}
+.contents .board-memory .tb-write col.nth-1 {width: 20%;}
+.contents .board-memory .tb-write col.nth-2 {width: 80%;}
+.contents .board-memory .tb-write tbody tr th,
+.contents .board-memory .tb-write tbody tr td {vertical-align: middle; border-bottom: 1px solid #d9d9d9;}
+.contents .board-memory .tb-write tbody tr th {font-size: 13px; background: #F2F2F2; text-align: center;}
+.contents .board-memory .tb-write tbody tr td {font-size: 12.5px; padding: 8px 5px;}
+.contents .board-memory .tb-write .appe-reset,
+.contents .board-memory .tb-write input[class*=w-] {border: 1px solid #c9c9c9; height: 32px; box-sizing: border-box;}
+.contents .board-memory .tb-write .w-1 {width: 100px;}
+.contents .board-memory .tb-write .w-2 {width: 100px;}
+.contents .board-memory .tb-write .w-full {width: 100%;}
+.contents .board-memory .tb-write tbody tr td textarea {width: 100%; height: 380px; padding: 10px; font-size: 12.5px; font-family: "Nanum Square", sans-serif; line-height: 1.5; resize: none; color: #383838; box-sizing: border-box; border-color: #c9c9c9;}
+
+/*파일박스 커스터마이징*/
+.filebox {position: relative; display: inline-block;}
+.filebox input[type="file"] {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip:rect(0,0,0,0); border: 0;
+}
+.filebox label, .filebox .upload-name {display: inline-block; box-sizing: border-box; font-size: 12px; height: 32px;}
+.filebox label {
+  width: 58px; text-align: center; margin-left: 2px; border-radius: 5px; line-height: 32px;
+  background-color: #efefef; cursor: pointer; border: 1px solid #c9c9c9;
+}
+/* named upload */
+.filebox .upload-name {
+  position: relative; padding-left: 5px;
+  color: #999;
+  text-align: left;
+  line-height: 2.7em; vertical-align: top; background-color: #fff; border: 1px solid #c9c9c9;
+  text-overflow: ellipsis;
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+  -moz-appearance: none; appearance: none;
+}
+
+.contents .board-memory .tb-write tbody .tr-file td .row + .row {margin-top: 10px;}
+/*.contents .board-memory .tb-write .tr-file .w-2 {width: 100px;}*/
+.contents .board-memory .tb-write .inp-reset {background: #efefef; border-radius: 5px; vertical-align: top; height: 32px; width: 58px; font-size: 12px; color: #383838; margin-left: 2px; cursor: pointer; display: none; line-height: 32px;}
+.contents .board-memory .tb-write .tr-secure img {width: 68px;}
+.contents .board-memory .tb-write .tr-secure .w-1 {margin: 0 2px; padding-left: 5px; width: 70px;}
+.contents .board-memory .tb-write .tr-secure .s-1 {/*display: block;*/ font-size: 11px; letter-spacing: -0.7px;}
+.contents .board-memory .row-cause {text-align: center; margin-top: 25px; font-size: 12px; word-break: keep-all; letter-spacing: -0.9px;}

@@ -1,0 +1,42 @@
+@@include('../include/_head_top.html',{
+    "siteName": "@@siteName",
+    "imgPath":"@@imgPath",
+    "baseCssPath":"@@baseCssPath",
+    "pathCss": "about/init_m.css",
+    "isPageMenu" : "true"
+})
+<div class="contents">
+
+    <section class="wrap subVisual">
+        <div class="mainTxt container">
+            <p class="p-1">인천의 숨어있는 비경</p>
+            <h2><span class="f-bd">@@siteName</span> 소개</h2>
+            <p class="p-2"><span class="f-bdr txt-upper">@@siteNameEN</span></p>
+        </div>
+    </section>
+    <section class="wrap cmStyle about">
+        <div class="container">
+            <div class="area area-1">
+                <h3 class="h3-tit">
+                    <span class="row-1">@@aboutMent<span class="sampo"><span class="f-bd">@@siteNameEN</span></span></span>
+                    <span class="row-2"><span class="f-bd">@@siteName</span>@@josaRo 초대합니다.</span>
+                </h3>
+                <figure class="full"><img src="@@imgPath/about/beach_big.jpg" alt="@@siteName"></figure>
+                @@for (var i = 0; i < aboutTextArr.length; i++) {
+                    <p class='showing'>`+aboutTextArr[i]+`</p>
+                }
+                <figure class="half">
+                    <img src="@@imgPath/about/beach_small_1.jpg" alt="@@siteName"><img src="@@imgPath/about/beach_small_2.jpg" alt="@@siteName">
+                </figure>
+            </div>
+        </div>
+    </section>
+
+</div>
+@@include('../include/_bottom.html',{
+    "siteName": "@@siteName",
+    "siteNameEN": "@@siteNameEN",
+    "imgPath":"@@imgPath",
+    "address" : "@@wayCome.address",
+    "dotPath": ".."
+})

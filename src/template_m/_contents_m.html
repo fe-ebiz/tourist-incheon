@@ -1,0 +1,111 @@
+@@include('./include/_head_top.html',{
+    "siteName": "@@siteName",
+    "imgPath":"@@imgPath",
+    "baseCssPath":"@@baseCssPath",
+    "pathCss": "init_m.css",
+    "isPageMenu" : "false"
+})
+<div class="contents">
+
+    <section class="wrap main">
+        <div class="slide-container">
+            <div class="slide slide-1">
+                <div class="mainTxt container">
+                    <p class="p-1">@@subMent01</p>
+                    <h2><span class="f-bd">@@siteName</span>의<br> 푸름을 만나다 !</h2>
+                    <p class="p-2"><span class="f-bdr txt-upper">@@siteNameEN</span></p>
+                    <p class="p-3">
+                        @@mainMent01
+                    </p>
+                </div>
+            </div>
+            <div class="slide slide-2">
+                <div class="mainTxt container">
+                    <p class="p-1">@@subMent02</p>
+                    <h2><span class="f-bd">@@siteName</span>@@josaRo<br> 초대합니다 !</h2>
+                    <p class="p-2"><span class="f-bdr txt-upper">@@siteNameEN</span> </p>
+                    <p class="p-3">
+                        @@mainMent02
+                </div>
+            </div>
+        </div>
+
+        <!-- 190125 -->
+        <div class="weather">
+            <p class="area">
+                <span class="s-1">2018.07.02 (월)</span>
+                <span class="s-2">인천날씨 : 흐림</span>
+                <span class="s-3"><span class="big">21</span><span class="c">℃</span></span>
+                <span class="s-4">
+                    <img src="http://img.sampobeach.co.kr/weather/cloud1.png" alt="날씨">
+                    <span class="txt-dust">미세먼지 - <span class="grade">약간나쁨</span></span>
+                </span>
+            </p>
+        </div>
+    </section>
+
+    <section class="wrap cmStyle tourist">
+        <div class="container">
+            <h2 class="tit">
+                <span class="sampo"><span class="f-bd">@@siteNameEN</span></span>
+                <span class="f-bd">주변관광지</span> 안내
+                <a href="" class="plus"><span class="obj"></span></a>
+            </h2>
+
+            <!-- 주변관광지 -->
+            <div class="area cf">
+                <h3 class="h3-tit"><span class="f-bd">주변맛집</span> 관광지</h3>
+                <ol class="list cf">
+                    @@loop('./tourist/_list/_list_small_temp.html',"../_json_info/_list_tourist/list_food.json")
+                </ol>
+            </div>
+
+            <div class="area cf area-2">
+                <h3 class="h3-tit"><span class="f-bd">액티비티</span> 관광지</h3>
+                <ol class="list cf">
+                    @@loop('./tourist/_list/_list_small_temp.html',"../_json_info/_list_tourist/list_play.json")
+                </ol>
+            </div>
+        </div>
+    </section>
+    <section class="wrap cmStyle waycome">
+        <div class="container">
+            <h2 class="tit">
+                <span class="sampo"><span class="f-bd">@@siteNameEN</span></span>
+                <span class="f-bd">@@siteName</span> 오시는 길
+            </h2>
+            <div class="area cf">
+                <div class="way-map">
+                    @@include("@@mapBasePathM_map_m.html")
+                </div>
+                <div class="way-info">
+                    <p class="p-1">자가 차량 이용시</p>
+                    <dl>
+                        <dt class="skip"></dt>
+                        <dd>
+                            <p class="dot">차량 네비게이션에서 <span class="c-blue f-bd">@@siteName</span>을 입력</p>
+                            <p class="dot"><span class="c-blue f-bd">@@wayCome.address </span> 주소를 입력</p>
+                        </dd>
+                    </dl>
+                    <p class="p-1">대중교통 이용시</p>
+                    @@for(var i=0; i < wayCome.transport.length ;i++){
+                        <dl>
+                            <dt>`+ wayCome.transport[i].title +`</dt>
+                            <dd>
+                                <p class="dot">`+ wayCome.transport[i].step +`</p>
+                            </dd>
+                        </dl>
+                    }
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+@@include('./include/_bottom.html',{
+    "siteName": "@@siteName",
+    "siteNameEN": "@@siteNameEN",
+    "imgPath":"@@imgPath",
+    "address" : "@@wayCome.address",
+    "dotPath": "."
+})

@@ -1,0 +1,89 @@
+@@include('../include/_head_top.html',{
+    "siteName": "@@siteName",
+    "imgPath":"@@imgPath",
+    "baseCssPath":"@@baseCssPath",
+    "pathCss": "tourist/init.css",
+    "isPageMenu" : "true"
+})
+   <!-- 180802 관광지리스트 전개 순서 변경 -->
+   <div class="contents">
+
+    <section class="wrap subVisual">
+        <div class="mainTxt container">
+            <p class="p-1">인천여행 필수 체크!</p>
+            <h2><span class="f-bd">@@siteName</span> 주변관광지</h2>
+            <p class="p-2"><span class="f-bdr txt-upper">@@siteNameEN</span> </p>
+        </div>
+    </section>
+
+
+    <!-- 주변맛집 관광지 -->
+    <section class="wrap cmStyle tourist tour-2">
+        <div class="container">
+            <!-- 200513 관광지 페이지 내 타이틀 추가 -->
+            <h2 class="tourist-title">
+                <span class="row-1">인천여행 필수 체크!</span>
+                <span class="row-2"><span class="f-bd">인천 관광명소</span>를 확인하세요.</span>
+            </h2>
+            <div class="area cf">
+                <h3 class="h3-tit"><span class="f-bd">주변맛집</span> 관광지 <span class="sampo"><span class="f-bd">@@siteNameEN</span> </span></h3>
+                <!-- 200513 각 관광지 별 리스트 변경 -->
+                <ol class="list cf ol-food">            
+                    @@loop('./_list/_list_temp.html',"../_json_info/_list_tourist/list_food.json")
+                </ol>
+            </div>
+        </div>
+    </section>
+    <!-- 액티비티 관광지 -->
+    <section class="wrap cmStyle tourist tour-2">
+        <div class="container">
+            <div class="area cf">
+                <h3 class="h3-tit"><span class="f-bd">놀거리</span> 관광지 <span class="sampo"><span class="f-bd">@@siteNameEN</span> </span></h3>
+                <ol class="list cf ol-play">
+                    @@loop('./_list/_list_temp.html',"../_json_info/_list_tourist/list_play.json")
+                </ol>
+            </div>
+        </div>
+    </section>
+    <!-- 사찰/유적 관광지 -->
+    <section class="wrap cmStyle tourist tour-3">
+        <div class="container">
+            <div class="area cf">
+                <h3 class="h3-tit"><span class="f-bd">사찰/유적</span> 관광지 <span class="sampo"><span class="f-bd">@@siteNameEN</span></span></h3>
+                <ol class="list cf ol-ruins">
+                    @@loop('./_list/_list_temp.html',"../_json_info/_list_tourist/list_ruins.json")
+                </ol>
+            </div>
+        </div>
+    </section>
+    <!-- 자연 관광지 -->
+    <section class="wrap cmStyle tourist tour-5">
+        <div class="container">
+            <div class="area cf">
+                <h3 class="h3-tit"><span class="f-bd">자연</span> 관광지 <span class="sampo"><span class="f-bd">@@siteNameEN</span> </span></h3>
+                <ol class="list cf ol-nature">
+                    @@loop('./_list/_list_temp.html',"../_json_info/_list_tourist/list_nature.json")
+                </ol>
+            </div>
+        </div>
+    </section>
+    <!-- 박물관/기념관 관광지 -->
+    <section class="wrap cmStyle tourist tour-6">
+        <div class="container">
+            <div class="area cf">
+                <h3 class="h3-tit"><span class="f-bd">박물관/기념관</span> 관광지 <span class="sampo"><span class="f-bd">@@siteNameEN</span> </span></h3>
+                <ol class="list cf ol-museum">
+                    @@loop('./_list/_list_temp.html',"../_json_info/_list_tourist/list_museum.json")
+                </ol>
+            </div>
+        </div>
+    </section>
+</div>
+
+@@include('../include/_bottom.html',{
+    "siteName": "@@siteName",
+    "siteNameEN": "@@siteNameEN",
+    "imgPath":"@@imgPath",
+    "address" : "@@wayCome.address",
+    "dotPath": ".."
+})

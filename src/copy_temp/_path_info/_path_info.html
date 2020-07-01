@@ -1,0 +1,38 @@
+@@if (pageName === 'intro') {
+    @@loop('../../template/_contents.html',"./_json_info/@@jsonName")
+}
+@@if (pageName === 'about') {
+    @@loop('../../template/about/_contents_about.html',"./_json_info/@@jsonName")
+}
+
+@@if (pageName === 'event') {
+    @@loop('../../template/event/_contents_event.html',"./_json_info/@@jsonName")
+}
+
+@@if (pageName === 'waycome') {
+    @@loop('../../template/waycome/_contents_waycome.html',"./_json_info/@@jsonName")
+}
+
+@@if (pageName === 'tourist') {
+    @@loop('../../template/tourist/_contents_tourist.html',"./_json_info/@@jsonName")
+}
+
+
+@@if (pageName === 'intro_m') {
+    @@loop('../../template_m/_contents_m.html',"./_json_info/@@jsonName")
+}
+@@if (pageName === 'about_m') {
+    @@loop('../../template_m/about/_contents_about_m.html',"./_json_info/@@jsonName")
+}
+
+@@if (pageName === 'event_m') {
+    @@loop('../../template_m/event/_contents_event_m.html',"./_json_info/@@jsonName")
+}
+
+@@if (pageName === 'waycome_m') {
+    @@loop('../../template_m/waycome/_contents_waycome_m.html',"./_json_info/@@jsonName")
+}
+
+@@if (pageName === 'tourist_m') {
+    @@loop('../../template_m/tourist/_contents_tourist_m.html',"./_json_info/@@jsonName")
+}

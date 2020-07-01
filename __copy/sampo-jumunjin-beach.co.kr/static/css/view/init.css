@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/*공통스타일*/
+.contents .wrap.cmStyle {padding: 40px 0 80px;}
+.contents .wrap.cmStyle + .wrap.cmStyle {padding-top: 0;}
+.contents .wrap.cmStyle .tit {text-align: center;}
+.contents .wrap.cmStyle .tit .sokcho {text-transform: uppercase; font-size: 18px; display: inline-block; text-indent: 2px; margin-bottom: 2px; background: #fff; border: 2px solid #61a0c8; padding: 8px 9px 6px; line-height: 1;}
+.contents .wrap.cmStyle .tit .sokcho-2 {font-size: 18px;}
+.contents .wrap.cmStyle .tit .big {display: block; letter-spacing: -1px; margin-top: 5px; font-size: 40px;} 
+
+/*서브비쥬얼*/
+.contents .subVisual {background: #eee url(http://img.sampobeach.co.kr/view/subVisual.jpg) no-repeat center;}
+
+/*속초8경*/
+.contents .view {}
+.contents .view .h3-tit {position: relative;font-size: 26px; margin: 0px 0 10px; padding-left: 22px; letter-spacing: -0.9px;}
+.contents .view .h3-tit:before {content: ""; position: absolute; left: 0; display: inline-block; width: 7px; height: 73px; background: #c0c0c0; vertical-align: middle; margin-right: 10px;}
+.contents .view .h3-tit [class*=row-] {display: block;}
+.contents .view .h3-tit .row-1 {line-height: 1;}
+.contents .view .h3-tit .row-2 {font-size: 40px; margin-top: 2px;}
+.contents .view .h3-tit .sampo {text-transform: uppercase; font-size: 16px; display: inline-block; text-indent: 2px; margin-left: 3px;}
+.contents .view .p-1 {margin-top:7px; font-size:20px; line-height: 32px; color:#434343; padding-left: 25px;}
+.contents .view .view-map {width: 1180px; margin: 30px auto 0; box-sizing: border-box; overflow: hidden;}
+.contents .view .view-map img {border: 1px solid #a29fa0; border-radius: 15px;}
+.contents .view .area {margin-top: 40px;} 
+.contents .view .area .list {margin-top: 28px;}
+.contents .view .area .list + .list {margin-top: 35px;}
+.contents .view .area .list > li {float: left; width: 287.5px; margin-left: 10px; overflow: hidden;}
+.contents .view .area .list > li:first-child {margin-left: 0;}
+/*.contents .view .area .list > .link-tour {cursor:pointer}*/
+.contents .view .area .list > li .tour-img {box-sizing: border-box;}
+.contents .view .area .list > li dl {margin-top: 15px; letter-spacing: -0.9px;}
+.contents .view .area .list > li dl dt {font-size: 15px; color: 0; padding-bottom: 10px; margin-bottom: 0px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.contents .view .area .list > li dl dt h4 {font-size: 22px; font-weight: 700; color: #000; text-align: center; padding-top: 1px;}
+.contents .view .area .list > li dl dt h4 .num {position: relative; top: -1px;background: #1d5e87; color: #fff; display: inline-block; width: 32px; height: 32px; border-radius: 50%; line-height: 1.5; vertical-align: middle; font-weight: 400;}
+.contents .view .area .list > li dl dd {font-size: 17px; color: #4c4c4c; line-height: 1.4; padding: 0 7px; height: 70px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; letter-spacing: -1px;}
+
+.contents .view-2 {position:relative; padding-top:40px;}
+/*
+.contents .view-2 .h3-tit {font-size:40px; line-height:48px; color:#434343}
+.contents .view-2 .h3-tit span {font-weight:700; color:#516bc5}
+*/
+.contents .view-2 .list {position:relative; display:inline-block; margin-top: 28px;}
+/*.contents .view-2 .list + .list {margin-top: 35px;}*/
+.contents .view-2 .list > li {position:relative; float: left; box-sizing:border-box; width: 280px; margin-right:15px; overflow: hidden;}
+.contents .view-2 .list > li .tour-img {box-sizing: border-box; text-align:center}
+.contents .view-2 .list > li dl {margin-top: 15px; letter-spacing: -0.9px;}
+.contents .view-2 .list > li dl dt {font-size: 15px; color: 0; padding-bottom: 10px; margin-bottom: 0px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.contents .view-2 .list > li dl dt h4 {font-size: 22px; font-weight: 700; color: #000; text-align: center; padding-top: 1px;}
+.contents .view-2 .list > li dl dt h4 .num {position: relative; display: inline-block; width: 32px; height: 32px; top: -1px; margin-right:4px; font-size:20px; line-height:32px; vertical-align: middle; font-weight:700; color: #fff; border:1px solid #5774d9; border-radius: 50%; background: #5774d9; }
+.contents .view-2 .list > li dl dd {height:110px; font-size: 17px; color: #4c4c4c; line-height: 1.4; padding: 0 3px; letter-spacing: -1px; word-break:keep-all}
+
+.contents .view-2 .view-map {position:relative; width: 100%; margin: 23px auto 0px;}
+.contents .view-2 .view-map img {width:100%; border: none;}
+
+.contents .view .info {font-size:18px; line-height:24px; text-align:center; letter-spacing:-1px; color:#434343; margin-top: 25px;}

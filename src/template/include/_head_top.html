@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="ko-KR" class="no-js ie8 lt-ie10"><![endif]-->
+<!--[if IE 9]><html lang="ko-KR" class="no-js ie9 lt-ie10"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="ko">
+<!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>@@siteName</title>
+    @@include('./_head.html',{
+        "path": "@@baseCssPath",
+        "pathCss" : "@@pathCss"
+    })
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--헤더부분-->
+        @@if (isPageMenu === "false"){
+            @@include('./_header.html',{
+                "siteName": "@@siteName",
+                "imgPath" : "@@imgPath",
+                "isPageMenu": "@@isPageMenu",
+                "dotPath" : "."
+            })
+        }
+        @@if (isPageMenu === "true"){
+            @@include('./_header.html',{
+                "siteName": "@@siteName",
+                "imgPath" : "@@imgPath",
+                "isPageMenu": "@@isPageMenu",
+                "dotPath" : ".."
+            })
+        }

@@ -1,0 +1,96 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+
+body {font-family: 'Nanum Square', 'NanumSquare', 'Nanum Gothic', 'Malgun Gothic', sans-serif; line-height:1.3; letter-spacing: -0.3px; color: #434343;}
+/*body {font-family: 'NanumSquare', 'Nanum Square', 'Nanum Gothic', 'Malgun Gothic', sans-serif; line-height:1.3; letter-spacing: -0.3px; color: #434343;}*/
+img {max-width: 100%;}
+a {color: inherit;}
+label {cursor: pointer;}
+
+/*-bxSlider 재정의-*/
+.bx-wrapper,
+.bx-wrapper .bx-viewport {position: relative; margin: 0 auto; border: none; box-shadow: none; background: none;}
+.bx-controls {display: none;}
+/*
+.bx-wrapper .bx-controls-direction {position: absolute; width: 100%; width: 100%; left: 0; top: 50%; margin-top: -22.5px;}
+.bx-wrapper .bx-controls-direction a {display: block;}
+.bx-wrapper .bx-controls-direction a {background: none; width: 45px; height: 45px; top: 0; margin-top: 0; z-index: 1;}
+.bx-wrapper .bx-prev {left: 20px;}
+.bx-wrapper .bx-next {right: 20px;}
+.bx-wrapper .bx-controls-direction,
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto,
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {display: none;}
+*/
+
+/*공통스타일*/
+.contents {position: relative;}
+.container:before, .container:after {content: ""; display: table;}
+.container:after {clear: both;}
+.container {position: relative; width: 96%; margin: 0 auto;}
+.f-bd {font-weight: 700;}
+.f-bdr {font-weight: 800;}
+.wrap {box-sizing: border-box;}
+input[type=password] {font-family: "Nanum Gothic", sans-serif;}
+
+.wrapper {position: relative; max-width: 768px; margin: 0 auto;}
+
+.txt-upper {text-transform: uppercase;}
+
+/*공통 서브비쥬얼*/
+.contents .subVisual {padding-top: 100px; box-sizing: border-box; color: #fff; height: 200px; background: #eee url(http://img.sampobeach.co.kr/m/event/subVisual.jpg) no-repeat center bottom / cover;}
+.contents .subVisual .mainTxt {text-align: right; padding-right: 4%; box-sizing: border-box;}
+.contents .subVisual .mainTxt > * {text-shadow: 3px 3px 2px rgba(0,0,0, .25); letter-spacing: -0.7px;}
+.contents .subVisual .mainTxt .p-1 {font-size: 12px;font-weight: 700;}
+.contents .subVisual .mainTxt h2 {font-size: 25px; margin-top: 5px; line-height: 1.1; letter-spacing: -0.9px;}
+.contents .subVisual .mainTxt .p-2 {font-size: 16px; margin-top: 5px;}
+
+/*해더영역*/
+.header {position: absolute; top: 0; left: 0; width: 100%; z-index: 99;}
+.header .wrap {padding-bottom: 20px;}
+.header .wrap .logo {position: relative; float: left; width: 120px; left: 10px; top: 12px;}
+.header .wrap .nav-tab {position: absolute; top: 8px; right: 8px; width: 28px; border: 0; background: 0; cursor: pointer;}
+.header .wrap .nav-tab .bar {display: block; background: #fff; height: 4px; margin: 5px auto; border-radius: 4px;}
+
+
+.bg-drop {position: fixed; z-index: 11; top: 0; left: 0; width: 100%; height: 100%; background: #000; opacity: 0.5;}
+.wrapper .wrap .gnb {position: fixed; right: -200px; top: 0; width: 200px; height: 100%; transition: right 0.3s; -webkit-transition: right 0.3s; -o-transition: right 0.3s;}
+.wrapper .wrap .gnb .bg-drop {opacity: 0; visibility: hidden; transition: all 0.3s; -webkit-transition: all 0.3s; -o-transition: all 0.3s;}
+.wrapper .wrap .gnb.on {right: 0;}
+.wrapper .wrap .gnb.on .bg-drop {display: block; opacity: 0.5; visibility: visible;}
+
+@media (min-width: 768px) {
+	.header .wrap {overflow: hidden;}
+	.wrapper .wrap .gnb {position: absolute; right: 50%; margin-right: -584px;}
+	.wrapper .wrap .gnb.on {position: fixed; right: 50%; margin-right: -384px;}
+}
+
+.wrapper .wrap .menu {position: absolute; right: 0; top: 0; width: 100%; height: 100%; background: #fff; z-index: 12;}
+.wrapper .wrap .menu > li.item-0 {background: #0075b4; padding: 8px 12px;}
+.wrapper .wrap .menu > li.item-0 img {position: relative; top: 2px; width: 96px;}
+.wrapper .wrap .menu > li {position: relative;} 
+.wrapper .wrap .menu > li > a {display: block; padding: 10px 12px; font-size: 14px;}
+.wrapper .wrap .menu > li > a {border-bottom: 1px solid #d2d2d2;}
+.wrapper .wrap .menu .i-x {right: 0; top: 0; height: 100%; width: 40px;}
+.wrapper .wrap .menu .i-x:before, .wrapper .wrap .menu .i-x:after {background: #fff; height: 2px; left: 50%; margin-left: -10px; top: 50%; margin-top: -2px;}
+.wrapper .wrap .menu .rArrow {float: right;}
+.wrapper .wrap .menu .rArrow:after {border-color: #118bea; border-width: 2px; top: 0px; margin-right: 2px;}
+
+
+/*푸터영역*/
+.footer {position: relative; background: #576480; padding: 20px 0 35px; text-align: center;}
+/*.footer .wrap .logo, .footer .wrap address {float: left;}*/
+.footer .wrap {width: 100%;}
+.footer .wrap .logo {margin-bottom: 5px;}
+.footer .wrap .logo img {width: 100px;}
+.footer .wrap address {color: #fff; font-size: 11.5px; line-height: 1.6; word-break: keep-all; letter-spacing: -0.5px;}
+.footer .wrap address small {text-transform: uppercase; font-size: 11px;}
+
+
+/*TOP버튼*/
+.btn-top {display: block; position: fixed; right: 15px; bottom: 15px; width: 42px; height: 42px; background: #fff; z-index: 10; border: 1px solid #b8b7b1; color: #363636; text-align: center; border-radius: 50%; box-sizing: border-box; padding-top: 4px; line-height: 1; font-weight: 700; letter-spacing: -0.9px; font-size: 14px; display: none;
+	-webkit-box-shadow: 0px 2px 2px 2px rgba(0,0,0, .1); 
+	box-shadow: 0px 2px 2px 2px rgba(0,0,0, .1);
+}
+.btn-top .arr {display: block; font-family: "Nanum Gothic", sans-serif; transform: rotateX(45deg); -webkit-transform: rotateX(45deg); -ms-transform: rotateX(45deg); -o-transform: rotateX(45deg); font-size: 15px;}
