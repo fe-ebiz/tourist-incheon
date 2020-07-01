@@ -19,7 +19,7 @@ const del = require('del');
 const spritesmith = require('gulp.spritesmith');
 const replace = require('gulp-replace');
 const copy = require('gulp-copy');
-// const rename = require('gulp-rename');
+const rename = require('gulp-rename');
 
 function bSync() {
     browserSync.init({
@@ -48,7 +48,8 @@ function bSyncCopy() {
     browserSync.init({
         // watch: true,
         port: 3030,
-        startPath: './somuui-do.co.kr/views/',
+        // startPath: './somuui-do.co.kr/views/',
+        startPath: './site_manager.html',
         server: {
             baseDir: './copy_dist'
         }
@@ -235,6 +236,72 @@ function css() {
         }));
 };
 
+// function css() {
+//     return src(config.css.src, {
+//             since: lastRun(css)
+//         })
+//         .pipe(fileinclude({
+//             prefix: '@@',
+//             basepath: '@file'
+//             // basepath: '@root'
+//         }))
+//         .pipe(dest(config.css.dest))
+//         .pipe(browserSync.stream({
+//             match: '**/*.css'
+//         }));
+// };
+
+// function copyCss() {
+//     return src(config.css.copy_src, {
+//             since: lastRun(css)
+//         })
+//         .pipe(fileinclude({
+//             prefix: '@@',
+//             basepath: '@file'
+//             // basepath: '@root'
+//         }))
+//         .pipe(dest(config.css.copy_dest))
+//         .pipe(browserSync.stream({
+//             match: '**/*.css'
+//         }));
+// };
+
+function copyCss() {
+    return src(config.css.copy_cssTxt)
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file'
+            // basepath: '@root'
+        }))
+        .pipe(rename(function(path){
+            path.extname = ".css";
+        }))
+        .pipe(dest(config.css.copy_dest));
+        // .pipe(browserSync.stream({
+        //     match: '**/*.css'
+        // }));
+};
+
+
+
+function templateTEST() {
+    return src(config.template.src, {
+            since: lastRun(template)
+        })
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file'
+            // basepath: '@root'
+        }))
+        .pipe(htmlbeautify(config.htmlbeautify))
+        .pipe(dest(config.template.dest))
+        .pipe(browserSync.stream({
+            match: '**/*.html',
+        }));
+};
+
+
+
 function js() {
     return src(config.js.src, {
             since: lastRun(js)
@@ -290,7 +357,6 @@ function watching(cb) {
     watch([config.template.copy_parts], templateCopyAll);
 
 
-
     watch(config.sass.src, sassDev)
     watch(config.sass.parts, sassDevAll)
     watch(config.css.src, css)
@@ -298,15 +364,24 @@ function watching(cb) {
     watch(config.img.src, img);
     watch(config.etc.src, etc);
 
+
+    
     watch(config.json.src, template);
     watch(config.json.src, templateAll);
-
+    
     watch(config.json.src, templateM);
     watch(config.json.src, templateMAll);
-
+    
     watch(config.json.src, templateCopy);
     watch(config.json.src, templateCopyAll);
     
+    
+    
+    watch(config.json.src, copyCss);
+    watch(config.css.copy_cssTxt, copyCss);
+    // watch(config.css.copy_src, copyCss);
+    
+
     cb();
 };
 
@@ -318,6 +393,7 @@ function cleanDist(cb) {
 
 function cleanCopy(cb) {
     del(config.copy_dev);
+    del(config.copy_css_dev);
     cb();
 };
 
@@ -398,7 +474,7 @@ exports.build = parallel(series(parallel(template,templateM), sassDev, css, js, 
 
 exports.buildM = parallel(series(parallel(template,templateM), sassDev, css, js, img, etc, bSyncM), watching);
 
-exports.copybuild = parallel(series(parallel(template,templateM,templateCopy), sassDev, css, js, img, etc, bSyncCopy), watching);
+exports.copybuild = parallel(series(parallel(template,templateM,templateCopy), sassDev, css, js, img, etc, copyCss, bSyncCopy), watching);
 
 exports.default = parallel(bSync, watching);
 exports.test = series(parallel(template), sassPrd, css, js, img, etc, copyTest, testPathServer, bSyncTest);

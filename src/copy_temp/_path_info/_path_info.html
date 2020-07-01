@@ -17,6 +17,10 @@
     @@loop('../../template/tourist/_contents_tourist.html',"./_json_info/@@jsonName")
 }
 
+@@if (pageName === 'css_intro') {
+    @@loop('../_css_temp/init_temp.css',"./_json_info/@@jsonName")
+}
+
 
 @@if (pageName === 'intro_m') {
     @@loop('../../template_m/_contents_m.html',"./_json_info/@@jsonName")
@@ -35,4 +39,9 @@
 
 @@if (pageName === 'tourist_m') {
     @@loop('../../template_m/tourist/_contents_tourist_m.html',"./_json_info/@@jsonName")
+}
+
+
+@@if (pageName === 'css_intro_m') {
+    @@loop('../_css_temp/init_m_temp.css',"./_json_info/@@jsonName")
 }

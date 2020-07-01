@@ -3,7 +3,8 @@
     "imgPath":"@@imgPath",
     "baseCssPath":"@@baseCssPath",
     "pathCss": "init_m.css",
-    "isPageMenu" : "false"
+    "isPageMenu" : "false",
+    "domain" : "@@domain"
 })
 <div class="contents">
 
@@ -12,7 +13,7 @@
             <div class="slide slide-1">
                 <div class="mainTxt container">
                     <p class="p-1">@@subMent01</p>
-                    <h2><span class="f-bd">@@siteName</span>의<br> 푸름을 만나다 !</h2>
+                    <h2><span class="f-bd">@@siteName</span>의<br> 풍경을 만나다 !</h2>
                     <p class="p-2"><span class="f-bdr txt-upper">@@siteNameEN</span></p>
                     <p class="p-3">
                         @@mainMent01
@@ -76,7 +77,12 @@
             </h2>
             <div class="area cf">
                 <div class="way-map">
-                    @@include("@@mapBasePathM_map_m.html")
+                    @@if(domain === "somuui-do.co.kr"){
+                        @@include("./_map_m.html")
+                    }
+                    @@if(domain !== "somuui-do.co.kr"){
+                        @@include("../copy_temp/@@domain/views_m/_map_m.html")
+                    }
                 </div>
                 <div class="way-info">
                     <p class="p-1">자가 차량 이용시</p>
@@ -84,7 +90,7 @@
                         <dt class="skip"></dt>
                         <dd>
                             <p class="dot">차량 네비게이션에서 <span class="c-blue f-bd">@@siteName</span>을 입력</p>
-                            <p class="dot"><span class="c-blue f-bd">@@wayCome.address </span> 주소를 입력</p>
+                            <p class="dot"><span class="c-blue f-bd">@@wayCome.address@@wayCome.addInfo </span> 주소를 입력</p>
                         </dd>
                     </dl>
                     <p class="p-1">대중교통 이용시</p>
@@ -107,5 +113,7 @@
     "siteNameEN": "@@siteNameEN",
     "imgPath":"@@imgPath",
     "address" : "@@wayCome.address",
+    "josaLeul" : "@@josaLeul",
+    "domain": "@@domain",
     "dotPath": "."
 })

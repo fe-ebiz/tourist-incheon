@@ -1,0 +1,38 @@
+[{
+    "siteName": "청라호수 공원",
+    "siteNameEN": "cheongna-park",
+    "domain": "cheongna-park.co.kr",
+    "baseCssPath": "http://design.ebiznetworks.co.kr/lhc/tourist-incheon/static",
+    "imgPath":"http://design.ebiznetworks.co.kr/lhc/tourist-incheon/img/cheongna-park.co.kr",
+    "subMent01":"인천에서 가장 아름다운 공원",
+    "mainMent01":"인천에서 만나는 최고의 여유<br>새련되고 현대적인 감각에 감탄이 절로 나옵니다.",
+    "subMent02":"다양한 문화, 아름다운 친수공간",
+    "mainMent02":"다면적 도시구조, 다양한 문화행태를 담는<br>사계절, 바다내음이 가득 물든 풍광들이 넘쳐납니다.",
+    "josaRo":"으로",
+    "josaLeul":"을",
+    "aboutMent":"인천에서 만나는 또 하나의 여유!",
+    "aboutTextArr":[ 
+        "청라호수공원은 다면적 도시구조, 다양한 문화행태를 담아내는 3개의 섬, 다양한 물의 이용을 통한 친수공간으로 조성된 공원입니다.<br>호수공원 전체를 연결하는 순환동선으로 4개 공간 (에코존, 전통존, 레져존, 아트존)으로 결합하여, 과거·현재·미래를 잇는 새로운 패러다임을 제시합니다.",
+    
+        "공원의 과거, 현재 그리고 미래 공원의 4개의 공간은 과거, 현재 그리고 미래를 보여줍니다.<br>총면적 1,026,646.6㎡, 총사업비 1,210억원과 주요시설로는 생태공간, 전통공간, 레져공간, 예술공간, 음악분수, 낭만수로, 문화수로, 환상수로가 있습니다."
+    ],
+    "wayCome":{
+        "ment":"인천에서 가장 아름다운 공원, 청라호수공원 위치안내",
+        "address":"인천시 서구 크리스탈로",
+        "addInfo":"",
+        "naverMap":"http://naver.me/FuiFC98S",
+        "kakaoMap":"http://kko.to/yVm_0vjDo",
+        "transport":[
+            {
+                "title":"공항철도 청라국제도시역",
+                "step":
+                "청라국제도시역 공항철도 하차 후 701번 버스승차<br>호수공원음악분수 정류장 하차"
+            },
+            {
+                "title":"인천 2호선 가정역",
+                "step":
+                "가정(루원시티)역 하차 후 701번 버스승차<br>호수공원음악분수 정류장 하차"
+            }
+        ]
+    }
+}]

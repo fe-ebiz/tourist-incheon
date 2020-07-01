@@ -5,6 +5,7 @@ module.exports = function () {
         test = 'test',
         copy_source = 'src_copy',
         copy_dev = 'copy_dist',
+        copy_css_dev = 'copy_css',
         remove = ['.sass-cache', 'dist'],
         
 
@@ -40,7 +41,10 @@ module.exports = function () {
         // Css 경로
         css = {
             src: source + '/assets/css/**/*.css',
-            dest: development + '/static/css'
+            dest: development + '/static/css',
+            copy_src: source + '/copy_temp/**/css/**/*.css',
+            copy_cssTxt: source + '/copy_temp/**/css/**/*.txt',
+            copy_dest: copy_css_dev
         },
 
         // JS 경로
@@ -84,6 +88,7 @@ module.exports = function () {
         htmlbeautify: htmlbeautify,
 
         copy_dev: copy_dev,
+        copy_css_dev: copy_css_dev,
         json: json
 
     };

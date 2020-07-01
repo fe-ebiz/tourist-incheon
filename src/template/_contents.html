@@ -3,7 +3,8 @@
     "imgPath":"@@imgPath",
     "baseCssPath":"@@baseCssPath",
     "pathCss": "init.css",
-    "isPageMenu" : "false"
+    "isPageMenu" : "false",
+    "domain" : "@@domain"
 })
 
 <div class="contents">
@@ -88,7 +89,7 @@
                     <p class="p-1">자가 차량 이용시</p>
                     <dl>
                         <dt>- 네비게이션 주소 또는 @@siteName 입력</dt>
-                        <dt>- @@wayCome.address 주소를 입력</dt>
+                        <dt>- @@wayCome.address@@wayCome.addInfo 주소를 입력</dt>
                     </dl>
                     <p class="p-1">대중교통 이용시</p>
                     @@for(var i=0; i < wayCome.transport.length ;i++){
@@ -101,7 +102,12 @@
                     }
                 </div>
                 <div class="way-map">
-                    @@include("@@mapBasePath_map_intro.html")
+                    @@if(domain === "somuui-do.co.kr"){
+                        @@include("./_map_intro.html")
+                    }
+                    @@if(domain !== "somuui-do.co.kr"){
+                        @@include("../copy_temp/@@domain/views/_map_intro.html")
+                    }
                 </div>
             </div>
         </div>
@@ -113,5 +119,8 @@
     "siteNameEN": "@@siteNameEN",
     "imgPath":"@@imgPath",
     "address" : "@@wayCome.address",
+    "wayCome" : "@@wayCome",
+    "josaLeul" : "@@josaLeul",
+    "domain": "@@domain",
     "dotPath": "."
 })

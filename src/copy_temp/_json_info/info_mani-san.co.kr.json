@@ -1,0 +1,35 @@
+[{
+    "siteName": "마니산",
+    "siteNameEN": "mani-san",
+    "domain": "mani-san.co.kr",
+    "baseCssPath": "http://design.ebiznetworks.co.kr/lhc/tourist-incheon/static",
+    "imgPath":"http://design.ebiznetworks.co.kr/lhc/tourist-incheon/img/mani-san.co.kr",
+    "subMent01":"인천에서 가장 아름다운 영산",
+    "mainMent01":"참성단, 성화를 채화 봉송하는 민족의 영산",
+    "subMent02":"백두산과 한라산의 중간지점",
+    "mainMent02":"단군 제천의 명산, 용과 신선이 사는 곳<br>강화여행의 가장 훌륭한 명산입니다.",
+    "josaRo":"으로",
+    "josaLeul":"을",
+    "aboutMent":"인천에서 만나는 또 하나의 여유!",
+    "aboutTextArr":[ 
+        "강화도 남서단에 위치하고 한반도의 중앙에 자리잡고 있어 마니산을 중심으로 한라산과 백두산까지의 거리가 같다고 합니다.",
+    
+        "마니산이 단군이 제천할 정도의 명산으로 용이 승천하고 용마가 나왔으며, 신선이 사는 곳으로 72대 왕후장상이 나올 곳이라 합니다. 마니산 정상에는 단군성조께서 하늘에 제천의식을 봉행하신 참성단이 있으며 ‘88 세계 장애자 올림픽을 비롯 매년 전국체전시 성화를 채화 봉송하고 있는 민족의 영산입니다.",
+    
+        "등산로를 따라 918개의 돌계단을 올라가노라면 서해바다 풍경이 한눈에 들어와 아름다운 경치를 만끽할 수 있으며, 동쪽 기슭으로 신라 선덕여왕 때 지은 정수사 법당 살문짝 꽃무늬의 아름다움도 즐길 수 있습니다."
+    ],
+    "wayCome":{
+        "ment":"강화여행의 가장 훌륭한 명산, 마니산 위치안내",
+        "address":"인천시 강화군 화도면 마니산로675번길",
+        "addInfo":"",
+        "naverMap":"http://naver.me/5sE42KKj",
+        "kakaoMap":"http://kko.to/_h2uQwtDB",
+        "transport":[
+            {
+                "title":"강화터미널",
+                "step":
+                "강화터미널에서 700-1번 버스 승차<br> 마니산 입구 하차 후 마니산국민관광지입구 이동"
+            }
+        ]
+    }
+}]

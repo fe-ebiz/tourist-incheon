@@ -24,7 +24,7 @@
                         <dt class="skip"></dt>
                         <dd>
                             <p class="dot">차량 네비게이션에서 <span class="c-blue f-bd">@@siteName</span>을 입력</p>
-                            <p class="dot"><span class="c-blue f-bd">@@wayCome.address </span> 주소를 입력</p>
+                            <p class="dot"><span class="c-blue f-bd">@@wayCome.address@@wayCome.addInfo </span> 주소를 입력</p>
                         </dd>
                     </dl>
                     <p class="p-1">대중교통 이용시</p>
@@ -42,7 +42,12 @@
                     </p>
                 </div>
                 <div class="way-map">
-                    @@include("../@@mapBasePath/_map_way.html")
+                    @@if(domain === "somuui-do.co.kr"){
+                        @@include("../_map_way.html")
+                    }
+                    @@if(domain !== "somuui-do.co.kr"){
+                        @@include("../../copy_temp/@@domain/views/_map_way.html")
+                    }
                 </div>
             </div>
         </div>
@@ -55,5 +60,7 @@
     "siteNameEN": "@@siteNameEN",
     "imgPath":"@@imgPath",
     "address" : "@@wayCome.address",
+    "josaLeul" : "@@josaLeul",
+    "domain": "@@domain",
     "dotPath": ".."
 })

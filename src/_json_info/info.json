@@ -1,6 +1,7 @@
 [{
-    "siteName": "소무의도 템플릿",
+    "siteName": "~템플릿~",
     "siteNameEN": "somuui-do~템플릿~",
+    "domain": "somuui-do.co.kr",
     "baseCssPath": "http://design.ebiznetworks.co.kr/lhc/tourist-incheon/static",
     "imgPath":"http://design.ebiznetworks.co.kr/lhc/tourist-incheon/img/somuui-do.co.kr",
     "subMent01":"서해가 품은 가장 아름다운 풍경",
@@ -8,6 +9,7 @@
     "subMent02":"고요한 바다, 향긋한 바다향기",
     "mainMent02":"해지는 서해바다의 수평선<br>사계절, 바다내음이 가득 물든 풍광들이 넘쳐납니다.",
     "josaRo":"로",
+    "josaLeul":"를",
     "aboutMent":"해안절벽과 기암괴석의 자연경관 !",
     "aboutTextArr":[ 
         "소무의도의 다른 이름은 ‘떼무리’입니다. <br>인도교와 연결되는 서쪽마을 선착장 이름도 떼무리선착장으로 불립니다. 해안선 길이가 2.5km인 아담한 섬의 역사는 300여 년 전으로 거슬러 올라갑니다. 박씨 가족이 세 딸과 함께 들어와 섬을 개척했고, 유씨 청년을 데릴사위로 삼으면서 유씨 집성촌이 형성됐다고 합니다.",
