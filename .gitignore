@@ -71,3 +71,6 @@ _tmp/
 img/
 svc_tmp/
 dist/
+
+# 카피사이트
+copy_dist/

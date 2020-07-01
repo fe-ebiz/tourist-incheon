@@ -1,0 +1,55 @@
+@@include('../include/_head_top.html',{
+    "siteName": "@@siteName",
+    "imgPath":"@@imgPath",
+    "baseCssPath":"@@baseCssPath",
+    "pathCss": "waycome/init_m.css",
+    "isPageMenu" : "true"
+})
+<div class="contents">
+		
+    <section class="wrap subVisual">
+        <div class="mainTxt container">
+            <p class="p-1">@@wayCome.ment</p>
+            <h2><span class="f-bd"></span>@@siteName 교통정보</h2>
+        </div>
+    </section>
+    <section class="wrap cmStyle waycome">
+        <div class="container">
+            <div class="area cf">
+                <div class="way-map">
+                    @@include("../@@mapBasePathM_map_m.html")
+                </div>
+                <div class="way-info">
+                    <p class="p-1">자가 차량 이용시</p>
+                    <dl>
+                        <dt class="skip"></dt>
+                        <dd>
+                            <p class="dot">차량 네비게이션에서 <span class="c-blue f-bd">@@siteName</span>을 입력</p>
+                            <p class="dot"><span class="c-blue f-bd">@@wayCome.address</span> 주소를 입력</p>
+                        </dd>
+                    </dl>
+                    <p class="p-1">대중교통 이용시</p>
+                    @@for(var i=0; i < wayCome.transport.length ;i++){
+                        <dl>
+                            <dt>`+ wayCome.transport[i].title +`</dt>
+                            <dd>
+                                <p class="dot">`+ wayCome.transport[i].step +`</p>
+                            </dd>
+                        </dl>
+                    }
+                    <p class="row-btn">
+                        <a href="@@wayCome.naverMap" target="_blank"><img src="http://img.sampobeach.co.kr/waycome/btn_n.png" alt="네이버지도보기"></a><a href="@@wayCome.kakaoMap" target="_blank"><img src="http://img.sampobeach.co.kr/waycome/btn_d.png" alt="다음지도보기"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</div>
+@@include('../include/_bottom.html',{
+    "siteName": "@@siteName",
+    "siteNameEN": "@@siteNameEN",
+    "imgPath":"@@imgPath",
+    "address" : "@@wayCome.address",
+    "dotPath": ".."
+})

@@ -1,4 +1,7 @@
-# beach
+# 인천관광지 복사이트
+
+## 안목사이트 기준
+## http://anmokbeach.co.kr/
 
 ## 주변관광지
 ## http://www.sampobeach.co.kr

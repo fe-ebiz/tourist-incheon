@@ -1,0 +1,221 @@
+@charset "utf-8";
+
+
+/*메인비쥬얼*/
+.contents .main {}
+.contents .main .slide {box-sizing: border-box; color: #fff;}
+.contents .main .slide .mainTxt {position: absolute; top: 82px; width: 93%;}
+.contents .main .slide .mainTxt > * {text-shadow: 3px 3px 2px rgba(0,0,0, .25); letter-spacing: -0.7px;}
+.contents .main .slide .mainTxt .p-1 {font-size: 14px; text-indent: 2px;}
+.contents .main .slide .mainTxt h2 {font-size: 26px; margin-top: 5px; letter-spacing: -0.9px; line-height: 1.2;}
+.contents .main .slide .mainTxt .p-2 {font-size: 11px; margin-top: 7px;}
+.contents .main .slide .mainTxt .p-3 {font-size: 12px; padding-top: 9px; line-height: 1.4;}
+
+.contents .main .slide {height: 350px;}
+/*
+.contents .main .slide-1 {background: #eee url(http://img.sampobeach.co.kr/m/mv_1.jpg) no-repeat center 80% / cover;}
+.contents .main .slide-2 {background: #eee url(http://img.sampobeach.co.kr/m/mv_2.jpg) no-repeat center 100% / cover;}
+*/
+.contents .main .slide:before {content: ""; display: block; position: absolute; width: 100%; height: 100%; left: 0; top: 0;
+	-webkit-transition: all 5.5s;
+	-ms-transition: all 5.5s;
+	-o-transition: all 5.5s;
+	transition: all 5.5s;
+}
+.contents .main .slide.active:before{
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	transform: scale(1.05);
+}
+/* .contents .main .slide-1:before {background: #eee url(http://img.sampobeach.co.kr/m/mv_1.jpg) no-repeat center 80% / cover;}
+.contents .main .slide-2:before {background: #eee url(http://img.sampobeach.co.kr/m/mv_2.jpg) no-repeat center 100% / cover;} */
+
+.contents .main .slide .mainTxt,
+.contents .main .weather {left: 7%;}
+.contents .main .weather {position: absolute; top: 250px; z-index: 99;}
+.contents .main .weather .area {position: absolute; width: 160px; height: 53px; border-left: 1px solid #fff; padding-left: 10px; box-sizing: border-box;}
+.contents .main .weather .area [class*=s-] {display: block; color: #fff; font-size: 20px; font-size: 12px;}
+.contents .main .weather .area .s-1 {line-height: 1;}
+.contents .main .weather .area .s-2 {margin-top: 3px; font-weight: 700;}
+.contents .main .weather .area .s-3 {font-size: 18px;}
+.contents .main .weather .area .s-3 .big {font-size: 24px;}
+.contents .main .weather .area .s-3 .c {font-family: "Noto Sans KR";}
+.contents .main .weather .area img {position: absolute; right: 0; bottom: 0; width: 62px;}
+
+/* 190125_죽기전에 꼭 가봐야할 국내 여행 도서 추가  */
+.contents .main .book-area {cursor: pointer; position: relative; box-sizing: border-box; width: 100%; padding: 12px 20px 13px 24px; background: #000;}
+.contents .main .book-area .img-book {float: left; display: block; width: 45px; position: relative;}
+.contents .main .book-area .img-book img {width: 100%;}
+.contents .main .book-area .book-txt-box {float: left; display: block; /*width: 76%;*/ position: relative; padding-left: 11px;}
+.contents .main .book-area .book-txt-box p {margin-top: 2px; font-size: 12px; letter-spacing: -0.7px; word-break: keep-all; line-height: 16px; color: #fff;}
+.contents .main .book-area .book-txt-box p em {font-weight: 600; color: #fff76f;}
+.contents .main .book-area .book-txt-box .p-1 {}
+.contents .main .book-area .book-txt-box .p-2 {}
+
+/* 20200616 tvN 예능 */
+.contents .main .broadcast-area {cursor: pointer; position: relative; box-sizing: border-box; width: 100%; padding: 0px 20px 13px 24px; background: #000;}
+.contents .main .broadcast-area .img-broadcast {float: left; display: block; width: 100px; position: relative;}
+.contents .main .broadcast-area .img-broadcast img {width: 100%;}
+.contents .main .broadcast-area .broadcast-txt-box {float: left; display: block; /*width: 76%;*/ position: relative; padding-left: 11px;}
+.contents .main .broadcast-area .broadcast-txt-box p {margin-top: 2px; font-size: 12px; letter-spacing: -0.7px; word-break: keep-all; line-height: 16px; color: #fff;}
+.contents .main .broadcast-area .broadcast-txt-box p em {font-weight: 600; color: #fff76f;}
+.contents .main .broadcast-area .broadcast-txt-box .p-1 {}
+.contents .main .broadcast-area .broadcast-txt-box .p-2 {}
+
+
+/*공통스타일*/
+.contents .wrap.cmStyle {padding: 20px 0;}
+.contents .wrap.cmStyle .tit {font-size: 18px; text-align: center;}
+.contents .wrap.cmStyle .tit .sampo {text-transform: uppercase; font-size: 12px; display: block; text-indent: 2px; text-align: center;}
+/*
+.contents .wrap.cmStyle .tit .plus {position: relative; display: inline-block; width: 42px; height: 42px; box-sizing: border-box; border: 1px solid #a8a8a8; border-radius: 50%; vertical-align: middle; background: #fff; top: -4px; margin-left: 5px;}
+.contents .wrap.cmStyle .tit .plus .obj {display: block; position: relative; width: 100%; height: 100%;}
+.contents .wrap.cmStyle .tit .plus .obj:before, .contents .wrap.cmStyle .tit .plus .obj:after {content: ""; display: block; position: absolute;}
+.contents .wrap.cmStyle .tit .plus .obj:before {width: 15px; height: 1px; background: #a4a4a4; left: 50%; margin-left: -7px; top: 50%;}
+.contents .wrap.cmStyle .tit .plus .obj:after {width: 1px; height: 15px; background: #a4a4a4; left: 50%; margin-top: -7px; top: 50%;}
+*/
+
+/*이벤트*/
+.contents .event {background: url(http://img.sampobeach.co.kr/bg_event.jpg) repeat center;}
+
+.contents .event .area {margin-top: 12px;}
+.contents .event .area + .area {margin-top:20px;}
+.contents .event .area .evt-img {position: relative;}
+.contents .event .area .evt-img img {display: block; width: 100%; box-sizing: border-box; border: 1px solid #b0ada8;}
+.contents .event .area .evt-img iframe {width: 100%; height: 174px; margin-top: 10px;}
+.contents .event .area .evt-info {}
+.contents .event .area .h3-tit {position: relative; font-size: 14px; color: #5a5a5a; font-weight: 700; padding-bottom: 8px;  word-break: keep-all; text-align: center; margin-top: 10px;}
+.contents .event .area .h3-tit:after {content: ""; display: block; position: absolute; width: 30%; bottom: 0; left: 35%; border-bottom: 1px solid #a8a8a8;}
+.contents .event .area .evt-info .detail {padding-top: 3px;}
+.contents .event .area .evt-info dl {margin-top: 5px; font-size: 13px; line-height: 1.5; text-align: center;}
+.contents .event .area .evt-info dl:after {content: ""; display: table; clear: both;}
+.contents .event .area .evt-info dt, .contents .event .area .evt-info dd {display: inline-block;}
+.contents .event .area .evt-info dt {color: #008ead; font-weight: 700;}
+.contents .event .area .evt-info dd {margin-left: 5px; color: #000;}
+.contents .event .area .evt-info dd {letter-spacing: -0.5px;}
+.contents .event .showing {font-size: 18px; color: #4c4c4c; margin-top: 25px; line-height: 1.5;}
+.contents .event .area .h3-tit,
+.contents .event .area .evt-info dd,
+.contents .event .showing {letter-spacing: -0.9px;}
+
+/*관광지*/
+.contents .tourist {background: #fff;}
+.contents .tourist .area {}
+.contents .tourist .area .h3-tit {position: relative; font-size: 16px; margin: 15px 0 5px;}
+.contents .tourist .area-1 .h3-tit {margin-top: 10px;}
+.contents .tourist .area .h3-tit > * {vertical-align: middle;}
+.contents .tourist .area .h3-tit .sampo {text-transform: uppercase; font-size: 16px; display: inline-block; text-indent: 2px; margin-bottom: 4px;}
+.contents .tourist .area .h3-tit:before {content: ""; display: inline-block; width: 6px; height: 16px; background: #c0c0c0; vertical-align: middle; margin-right: 5px;}
+/* .contents .tourist .area .list + .list {margin-top: 10px;}
+.contents .tourist .area .list > li {float: left; width: 49%; margin-left: 2%; overflow: hidden;}
+.contents .tourist .area .list > li:nth-child(2n+1) {margin-left: 0;} */
+
+
+/*메인리스트*/
+/* .contents .tourist .area .list {display: flex; flex-wrap: wrap; margin-top: -10px;}
+.contents .tourist .area .list + .list {margin-top: 0px;}
+.contents .tourist .area .list > li {width: 49%; margin-left: 2%; margin-top: 10px;}
+.contents .tourist .area .list > li:nth-child(2n - 1) {margin-left: 0;}
+.contents .tourist .area .list > .link-tour {cursor:pointer}
+.contents .tourist .area .list > li .tour-img {border: 1px solid #a19e9f;  box-sizing: border-box;}
+.contents .tourist .area .list > li .tour-img img {width: 100%;}
+.contents .tourist .area .list > li dl {margin-top: 5px; letter-spacing: -0.9px; word-break: keep-all;}
+.contents .tourist .area .list > li dl dt {font-size: 11.5px; color: 0; padding-bottom: 5px; margin-bottom: 5px; border-bottom: 1px solid #c8c8c8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.contents .tourist .area .list > li dl dt h4 {font-size: 14px; color: #008ead; font-weight: 700; margin-bottom: 2px;}
+.contents .tourist .area .list > li dl dd {font-size: 13px; color: #4c4c4c; line-height: 1.5;} */
+
+/*오시는길*/
+.contents .waycome {background: #f5f5f5; padding: 55px 0 70px;}
+.contents .waycome [class*=way-] {position: relative;}
+.contents .waycome .area {margin-top: 12px;}
+.contents .waycome .way-info {width: 310px; margin: 0 auto;}
+.contents .waycome .way-info .p-1 {position: relative; margin-top: 15px; font-size: 14px; font-weight: 700;}
+.contents .waycome .way-info dl {font-size: 12px; line-height: 1.6; word-break: keep-all;}
+.contents .waycome .way-info dt {font-weight: 700; margin-top: 3px;}
+.contents .waycome .way-info dd {}
+.contents .waycome .way-info dd p.dot {position: relative; padding-left: 8px;}
+.contents .waycome .way-info dd p.dot:before {content: "-"; display: inline-block; position: absolute; left: 0;}
+.contents .waycome .way-map {position: relative; margin: 0 auto;}
+.contents .waycome .way-map > div {margin: 0 auto;}
+
+
+
+@media (max-device-width:320px){
+    /* 190125_죽기전에 꼭 가봐야할 국내 여행 도서 추가  */
+    .contents .main .book-area {padding: 11px 18px 12px 20px;}
+    .contents .main .book-area .img-book {width: 36px;}
+    .contents .main .book-area .book-txt-box {padding-left: 8px;}
+    .contents .main .book-area .book-txt-box p {margin-top: 0; font-size: 11px;}
+}
+
+
+
+
+/*리스트 컨틀로*/
+.contents .tourist .area .list {
+	display:flex;
+	flex-wrap:wrap;
+    margin-top:-10px;
+    justify-content: space-between;
+}
+
+.contents .tourist .area .cf::after{
+	display: none;
+}
+
+.contents .tourist .area .cf::before{
+	display: none;
+  }
+
+.contents .tourist .area .list + .list {
+	margin-top:0px;
+}
+.contents .tourist .area .list > li {
+	width:49%;
+	/* margin-left:2%; */
+	margin-top:10px;
+}
+.contents .tourist .area .list > li:nth-child(2n - 1) {
+	margin-left:0;
+}
+.contents .tourist .area .list > .link-tour {
+	cursor:pointer}
+.contents .tourist .area .list > li .tour-img {
+	border:1px solid #a19e9f;
+	box-sizing:border-box;
+}
+.contents .tourist .area .list > li .tour-img img {
+	width:100%;
+}
+.contents .tourist .area .list > li dl {
+	margin-top:5px;
+	letter-spacing:-0.9px;
+	word-break:keep-all;
+}
+.contents .tourist .area .list > li dl dt {
+	font-size:11.5px;
+	color:0;
+	padding-bottom:5px;
+	margin-bottom:5px;
+	border-bottom:1px solid #c8c8c8;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.contents .tourist .area .list > li dl dt h4 {
+	font-size:14px;
+	color:#008ead;
+	font-weight:700;
+	margin-bottom:2px;
+}
+.contents .tourist .area .list > li dl dd {
+	font-size:13px;
+	color:#4c4c4c;
+	line-height:1.5;
+}
+
+
+
+
+

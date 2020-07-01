@@ -1,0 +1,35 @@
+[{
+    "siteName": "소무의도",
+    "siteNameEN": "somuui-do",
+    "baseCssPath": "http://design.ebiznetworks.co.kr/lhc/tourist-incheon/static",
+    "imgPath":"http://design.ebiznetworks.co.kr/lhc/tourist-incheon/img/somuui-do.co.kr",
+    "subMent01":"서해가 품은 가장 아름다운 풍경",
+    "mainMent01":"인천에서 만나는 최고의 풍경<br>온화하고 다양한 풍경 모습에 감탄이 절로 나옵니다.",
+    "subMent02":"고요한 바다, 향긋한 바다향기",
+    "mainMent02":"해지는 서해바다의 수평선<br>사계절, 바다내음이 가득 물든 풍광들이 넘쳐납니다.",
+    "josaRo":"로",
+    "aboutMent":"해안절벽과 기암괴석의 자연경관 !",
+    "aboutTextArr":[ 
+        "소무의도의 다른 이름은 ‘떼무리’입니다. <br>인도교와 연결되는 서쪽마을 선착장 이름도 떼무리선착장으로 불립니다. 해안선 길이가 2.5km인 아담한 섬의 역사는 300여 년 전으로 거슬러 올라갑니다. 박씨 가족이 세 딸과 함께 들어와 섬을 개척했고, 유씨 청년을 데릴사위로 삼으면서 유씨 집성촌이 형성됐다고 합니다.",
+    
+        "인근에서는 새우 등이 많이 잡혔고, 한때는 안강망 어선이 40여 척이나 될 정도로 부유했던 섬입니다. 소무의도는 인천상륙작전 당시 군 병참기지로 사용되기도 했습니다.<br>섬 안에는 풍어제를 올렸던 터가 남아 있으며, 박정희 전 대통령이 가족과 함께 휴양차 들렀다는 해변도 있습니다. 섬 주변은 간조 때면 해변길을 드러내고 낚시꾼이나 찾을 줄 알았던 외딴 섬이 품은 사연이 이렇듯 구구절절합니다.",
+    
+        "인도교와 서쪽마을을 거치면 떼무리길로 연결되고 소무의도의 자연생태가 고스란히 남아 있는 이 길은 당산으로 연결됩니다. 부처깨미길은 만선과 안전을 기원하며 풍어제를 지냈던 곳으로 주변 조망이 빼어납니다."
+    ],
+    "wayCome":{
+        "ment":"인천의 명물 소무의도 위치안내",
+        "address":"인천 중구 무의동 소무의도",
+        "naverMap":"http://naver.me/x1XVOa1g",
+        "kakaoMap":"http://kko.to/1xp8HmTYH",
+        "transport":[
+            {
+                "title":"인천공항1터미널 하차시",
+                "step":
+                "인천공항1터미널에서 자기부상열차 용유방면 승차 <br>용유역에 하차<br>용유역정류장에서 마을버스 무의1번 승차<br> 광명항(샘꾸리)정류장 하차<br>소무의도까지 400미터 도보이동"
+            }
+        ]
+    },
+    "mapBasePath":"../copy_temp/somuui-do.co.kr/views/",
+    "mapBasePathM":"../copy_temp/somuui-do.co.kr/views_m/",
+    "jsonInfoPath":"../_json_info/"
+}]

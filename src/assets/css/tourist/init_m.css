@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+
+/*서브비쥬얼*/
+.contents .subVisual {background: #eee url(http://img.sampobeach.co.kr/m/tourist/subVisual.jpg) no-repeat center 60% /cover;}
+
+/*공통스타일*/
+.contents .wrap.cmStyle {padding: 17px 0 20px;}
+
+/*관광지*/
+.contents .tourist:nth-child(2n-1) {background: #f1f1f1;}
+.ie8 .contents .tour-2, .ie8 .contents .tour-4 {background: #f1f1f1;}
+
+.contents .tourist {background: #fff;}
+.contents .tourist .area {}
+.contents .tourist .area .h3-tit {position: relative; font-size: 16px; margin: 0px 0 5px;}
+.contents .tourist .area .h3-tit > * {vertical-align: middle;}
+.contents .tourist .area .h3-tit .sampo {text-transform: uppercase; font-size: 16px; display: inline-block; text-indent: 2px; margin-bottom: 4px;}
+.contents .tourist .area .h3-tit:before {content: ""; display: inline-block; width: 6px; height: 16px; background: #c0c0c0; vertical-align: middle; margin-right: 5px;}
+/* .contents .tourist .area .list + .list {margin-top: 10px;}
+.contents .tourist .area .list > li {float: left; width: 49%; margin-left: 2%; overflow: hidden;}
+.contents .tourist .area .list > li:nth-child(2n+1) {margin-left: 0;} */
+/* .contents .tourist .area .list > li:first-child {margin-left: 0;} */
+
+/*리스트 관련*/
+/* .contents .tourist .area .list {display: flex; flex-wrap: wrap; margin-top: -10px;}
+.contents .tourist .area .list + .list {margin-top: 0px;}
+.contents .tourist .area .list > li {width: 49%; margin-left: 2%; margin-top: 10px;}
+.contents .tourist .area .list > li:nth-child(2n - 1) {margin-left: 0;}
+.contents .tourist .area .list > .link-tour {cursor:pointer}
+.contents .tourist .area .list > li .tour-img {border: 1px solid #a19e9f;  box-sizing: border-box;}
+.contents .tourist .area .list > li .tour-img img {width: 100%;}
+.contents .tourist .area .list > li dl {margin-top: 5px; letter-spacing: -0.9px; word-break: keep-all;}
+.contents .tourist .area .list > li dl dt {font-size: 11.5px; color: 0; padding-bottom: 5px; margin-bottom: 5px; border-bottom: 1px solid #c8c8c8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.contents .tourist .area .list > li dl dt h4 {font-size: 14px; color: #008ead; font-weight: 700; margin-bottom: 2px;}
+.contents .tourist .area .list > li dl dd {font-size: 13px; color: #4c4c4c; line-height: 1.5;} */
+
+
+/*리스트 컨틀로*/
+.contents .tourist .area .list {
+	display:flex;
+	flex-wrap:wrap;
+    margin-top:-10px;
+    justify-content: space-between;
+}
+
+.contents .tourist .area .cf::after{
+  display: none !important;
+}
+
+.contents .tourist .area .cf::before{
+  display: none !important;
+}
+
+.contents .tourist .area .list + .list {
+	margin-top:0px;
+}
+.contents .tourist .area .list > li {
+	width:49%;
+	/* margin-left:2%; */
+	margin-top:10px;
+}
+.contents .tourist .area .list > li:nth-child(2n - 1) {
+	margin-left:0;
+}
+.contents .tourist .area .list > .link-tour {
+	cursor:pointer}
+.contents .tourist .area .list > li .tour-img {
+	border:1px solid #a19e9f;
+	box-sizing:border-box;
+}
+.contents .tourist .area .list > li .tour-img img {
+	width:100%;
+}
+.contents .tourist .area .list > li dl {
+	margin-top:5px;
+	letter-spacing:-0.9px;
+	word-break:keep-all;
+}
+.contents .tourist .area .list > li dl dt {
+	font-size:11.5px;
+	color:0;
+	padding-bottom:5px;
+	margin-bottom:5px;
+	border-bottom:1px solid #c8c8c8;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.contents .tourist .area .list > li dl dt h4 {
+	font-size:14px;
+	color:#008ead;
+	font-weight:700;
+	margin-bottom:2px;
+}
+.contents .tourist .area .list > li dl dd {
+	font-size:13px;
+	color:#4c4c4c;
+	line-height:1.5;
+}

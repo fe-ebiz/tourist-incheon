@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@@siteName</title>
+    @@include('./_head.html',{
+        "path": "@@baseCssPath",
+        "pathCss" : "@@pathCss"
+    })
+
+
+</head>
+<body>
+    <!--헤더부분-->
+    @@if (isPageMenu === "false"){
+        @@include('./_header.html',{
+            "siteName": "@@siteName",
+            "imgPath" : "@@imgPath",
+            "isPageMenu": "@@isPageMenu",
+            "dotPath" : "."
+        })
+    }
+    @@if (isPageMenu === "true"){
+        @@include('./_header.html',{
+            "siteName": "@@siteName",
+            "imgPath" : "@@imgPath",
+            "isPageMenu": "@@isPageMenu",
+            "dotPath" : ".."
+        })
+    }

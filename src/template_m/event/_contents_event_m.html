@@ -1,0 +1,27 @@
+@@include('../include/_head_top.html',{
+    "siteName": "@@siteName",
+    "imgPath":"@@imgPath",
+    "baseCssPath":"@@baseCssPath",
+    "pathCss": "event/init_m.css",
+    "isPageMenu" : "true"
+})
+
+<div class="contents">
+
+    <section class="wrap subVisual">
+        <div class="mainTxt container">
+            <p class="p-1">인천에서 즐기는 기분좋은 시간</p>
+            <h2><span class="f-bd">@@siteName</span> 축제와 이벤트</h2>
+        </div>
+    </section>
+    @@loop('./_list_event/_list_event_temp.html',"../_json_info/_list_event/list_event.json")
+
+</div>
+
+@@include('../include/_bottom.html',{
+    "siteName": "@@siteName",
+    "siteNameEN": "@@siteNameEN",
+    "imgPath":"@@imgPath",
+    "address" : "@@wayCome.address",
+    "dotPath": ".."
+})

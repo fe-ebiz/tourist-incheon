@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+
+/*서브비쥬얼*/
+.contents .subVisual {background: #eee url(http://img.sampobeach.co.kr/tourist/subVisual.jpg) no-repeat center;}
+
+/*공통스타일*/
+.contents .wrap.cmStyle {padding: 50px 0;}
+
+/*관광지*/
+.contents .tourist:nth-child(2n-1) {background: #f1f1f1;}
+.ie8 .contents .tour-2, .ie8 .contents .tour-4, .ie8 .contents .tour-6 {background: #f1f1f1;}
+
+.contents .tourist {background: #fff;}
+.contents .tourist .area {}
+.contents .tourist .area .h3-tit {position: relative;font-size: 26px; margin: 0px 0 15px;}
+.contents .tourist .area .h3-tit > * {vertical-align: middle;}
+.contents .tourist .area .h3-tit .sampo {text-transform: uppercase; font-size: 16px; display: inline-block; text-indent: 2px; margin-bottom: 4px;}
+.contents .tourist .area .h3-tit:before {content: ""; display: inline-block; width: 10px; height: 25px; background: #c0c0c0; vertical-align: middle; margin-right: 10px;}
+/* .contents .tourist .area .list + .list {margin-top: 20px;} */
+/* .contents .tourist .area .list > li {float: left; width: 280px; margin-left: 20px; overflow: hidden;} */
+/* .contents .tourist .area .list > li:first-child {margin-left: 0;} */
+.contents .tourist .area .list {display: flex; flex-wrap: wrap; margin-top: -20px;}
+.contents .tourist .area .list + .list {margin-top: 0px;}
+.contents .tourist .area .list > li {width: 280px; margin-left: 20px; margin-top: 20px;}
+.contents .tourist .area .list > li:nth-child(4n - 3) {margin-left: 0;}
+.contents .tourist .area .list > .link-tour {cursor:pointer}
+.contents .tourist .area .list > li .tour-img {border: 1px solid #a19e9f; width: 280px; height: 160px; box-sizing: border-box; overflow: hidden;}
+.contents .tourist .area .list > li dl {margin-top: 15px; letter-spacing: -0.9px;}
+.contents .tourist .area .list > li dl dt {font-size: 15px; color: 0; padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid #c8c8c8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.contents .tourist .area .list > li dl dt h4 {font-size: 22px; color: #008ead; font-weight: 700;}
+.contents .tourist .area .list > li dl dd {font-size: 16px; color: #4c4c4c; line-height: 1.7; word-break:keep-all; }
+.contents .tourist .area .list > li dl dd .t-space {display:inline-block; width:11px;}
